@@ -9,14 +9,62 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\logo.png" />
+    <None Remove="Resources\Images\pos_checkout.png" />
+    <None Remove="Resources\Images\pos_clear.png" />
+    <None Remove="Resources\Images\pos_clocking.png" />
+    <None Remove="Resources\Images\pos_daily_products.png" />
+    <None Remove="Resources\Images\pos_delete.png" />
+    <None Remove="Resources\Images\pos_delete.svg" />
+    <None Remove="Resources\Images\pos_hold.png" />
+    <None Remove="Resources\Images\pos_image.svg" />
+    <None Remove="Resources\Images\pos_image_four.png" />
+    <None Remove="Resources\Images\pos_image_one.png" />
+    <None Remove="Resources\Images\pos_image_one.svg" />
+    <None Remove="Resources\Images\pos_image_three.png" />
+    <None Remove="Resources\Images\pos_image_two.png" />
+    <None Remove="Resources\Images\pos_image_two.svg" />
+    <None Remove="Resources\Images\pos_laptop.svg" />
+    <None Remove="Resources\Images\pos_log_out.png" />
+    <None Remove="Resources\Images\pos_override.png" />
+    <None Remove="Resources\Images\pos_products.png" />
+    <None Remove="Resources\Images\pos_search.png" />
+    <None Remove="Resources\Images\pos_split_bill.png" />
+    <None Remove="Resources\Images\pos_void.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Core\Utils\" />
     <Folder Include="Core\Services\" />
     <Folder Include="Models\" />
     <Folder Include="ModelViews\" />
-    <Folder Include="Resources\" />
     <Folder Include="Views\Modals\" />
-    <Folder Include="Views\UserControls\" />
     <Folder Include="Views\Pages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\logo.png" />
+    <Resource Include="Resources\Images\pos_checkout.png" />
+    <Resource Include="Resources\Images\pos_clear.png" />
+    <Resource Include="Resources\Images\pos_clocking.png" />
+    <Resource Include="Resources\Images\pos_daily_products.png" />
+    <Resource Include="Resources\Images\pos_delete.png" />
+    <Resource Include="Resources\Images\pos_delete.svg" />
+    <Resource Include="Resources\Images\pos_hold.png" />
+    <Resource Include="Resources\Images\pos_image.svg" />
+    <Resource Include="Resources\Images\pos_image_four.png" />
+    <Resource Include="Resources\Images\pos_image_one.png" />
+    <Resource Include="Resources\Images\pos_image_one.svg" />
+    <Resource Include="Resources\Images\pos_image_three.png" />
+    <Resource Include="Resources\Images\pos_image_two.png" />
+    <Resource Include="Resources\Images\pos_image_two.svg" />
+    <Resource Include="Resources\Images\pos_laptop.svg" />
+    <Resource Include="Resources\Images\pos_log_out.png" />
+    <Resource Include="Resources\Images\pos_override.png" />
+    <Resource Include="Resources\Images\pos_products.png" />
+    <Resource Include="Resources\Images\pos_search.png" />
+    <Resource Include="Resources\Images\pos_split_bill.png" />
+    <Resource Include="Resources\Images\pos_void.png" />
   </ItemGroup>
 
 </Project>
