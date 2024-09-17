@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Masoft.POS/1.0.0": {
+        "runtime": {
+          "Masoft.POS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Masoft.POS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
