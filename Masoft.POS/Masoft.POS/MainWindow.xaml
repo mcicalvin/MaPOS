@@ -3,10 +3,956 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Masoft.POS"
+        xmlns:local="clr-namespace:Masoft.POS.Views.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+         ResizeMode="CanResizeWithGrip" 
+         WindowStartupLocation="CenterScreen" 
+         WindowState="Maximized"
+         Background="#E8E8E8"
+        WindowStyle="None"
+        Title="MainWindow" Height="550" Width="1280">
+    <Grid Background="#FFFFFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <!-- Begin Header -->
+        <Grid Height="80"
+                   Background="#324C7D"
+                   Grid.Row="0"
+                   Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="pack://application:,,,/Resources/Images/logo.png" Width="100" Grid.Column="0"/>
+            <Grid Grid.Column="1" 
+                 Margin="0 0 10  0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                                    Grid.Column="0">
+                    <Label Content="Molemoeng Gaans"
+                           Margin="30 0 40 0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="04/09/2024"/>
+                        <Label Content="12:45"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+                <!-- Begin Header  images-->
+                <StackPanel Orientation="Horizontal"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Grid.Column="1">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_daily_products.png" Width="20"/>
+                        <Label Content="Daily Reports"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_products.png" Width="20"/>
+                        <Label Content="Products"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_hold.png" Width="20"/>
+                        <Label Content="Hold"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_void.png" Width="20"/>
+                        <Label Content="Void"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_override.png" Width="20"/>
+                        <Label Content="Override"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_clear.png" Width="20"/>
+                        <Label Content="Clear"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_clocking.png" Width="20"/>
+                        <Label Content="Clocking"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="pack://application:,,,/Resources/Images/pos_log_out.png" Width="20"/>
+                        <Label Content="Logout"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+                <!-- End Header images-->
+            </Grid>
+
+        </Grid>
+        <!-- End Header -->
+        <!-- Begin Sidebar and Main Content -->
+        <Grid Grid.Row="1" Grid.Column="0"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Begin Sidebar -->
+            <StackPanel  Background="#FFFFFF"
+                        Grid.Column="0">
+                <!-- Sidebar content -->
+                <StackPanel  Width="260" Background="#FFFFFF">
+                    <Button Content="All Products" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                    <Button Content="Drinks" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                    <Button Content="Dresses" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                    <Button Content="Ladies Clothes" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                    <Button Content="Tea" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                    <Button Content="Coffee" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                </StackPanel>
+            </StackPanel>
+            <!-- End Sidebar -->
+            <!-- Begin Main Content -->
+            <Grid Margin="10"
+                 Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Begin Main Content Left-->
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Begin Main Content search-->
+                    <Border Grid.Row="0"
+                          BorderThickness="1"
+                           BorderBrush="#C4C4C4"
+                          CornerRadius="3">
+                        <StackPanel Orientation="Horizontal"
+                                   Margin="10">
+                            <Image Source="pack://application:,,,/Resources/images/pos_search.png" Width="35"/>
+                            <TextBox  Width="200" Margin="10" Tag="Search products..."
+                                     BorderBrush="Transparent"
+                                     BorderThickness="0"/>
+                        </StackPanel>
+
+                    </Border>
+
+                    <!-- End Main Content search-->
+
+                    <!-- Begin Main Content products list-->
+                    <Border Grid.Row="1"
+                          BorderThickness="1"
+                          BorderBrush="#C4C4C4"
+                           CornerRadius="3"
+                           Margin="0 20 0 0">
+                        <StackPanel Orientation="Vertical"
+                                   Margin="10 10">
+
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border CornerRadius="3"
+                                       BorderThickness="1"
+                                       BorderBrush="#324C7D"
+                                       Grid.Column="0"
+                                       Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"
+                                               Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_two.png" 
+                                              Width="90" 
+                                              Height="90"/>
+
+                                        <Label Content="000980"
+                                                  Foreground="#324C7D"
+                                                  HorizontalAlignment="Center"
+                                                  FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                              Foreground="#324C7D"
+                                              HorizontalAlignment="Center"
+                                              FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+                                       BorderThickness="1"
+                                       BorderBrush="#324C7D"
+                                       Grid.Column="1"
+                                       Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"
+                                               Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_one.png" 
+                                              Width="90" 
+                                              Height="90"/>
+
+                                        <Label Content="000980"
+                                              Foreground="#324C7D"
+                                              HorizontalAlignment="Center"
+                                              FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                              Foreground="#324C7D"
+                                              HorizontalAlignment="Center"
+                                              FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+                                       BorderThickness="1"
+                                       BorderBrush="#324C7D"
+                                       Grid.Column="2"
+                                        Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center"
+                                               Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_three.png" 
+                                              Width="90" 
+                                              Height="90"/>
+
+                                        <Label Content="000980"
+                                              Foreground="#324C7D"
+                                              HorizontalAlignment="Center"
+                                              FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                              Foreground="#324C7D"
+                                              HorizontalAlignment="Center"
+                                              FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+                                       BorderThickness="1"
+                                       BorderBrush="#324C7D"
+                                       Grid.Column="3">
+                                    <StackPanel Orientation="Vertical"
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"
+                                           Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_three.png" 
+                                                                              Width="90" 
+                                                                              Height="90"/>
+
+                                        <Label Content="000980"
+                                      FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                          Foreground="#324C7D"
+                                          HorizontalAlignment="Center"
+                                          FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                            </Grid>
+
+                            <Grid Margin="0 10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border CornerRadius="3"
+                                    BorderThickness="1"
+                                    BorderBrush="#324C7D"
+                                    Grid.Column="0"
+                                    Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_two.png" 
+                                           Width="90" 
+                                           Height="90"/>
+
+                                        <Label Content="000980"
+                                       Foreground="#324C7D"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                       Foreground="#324C7D"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+                                    BorderThickness="1"
+                                    BorderBrush="#324C7D"
+                                    Grid.Column="1"
+                                    Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                                            HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_one.png" 
+                                               Width="90" 
+                                               Height="90"/>
+
+                                        <Label Content="000980"
+                                           Foreground="#324C7D"
+                                           HorizontalAlignment="Center"
+                                           FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                           Foreground="#324C7D"
+                                           HorizontalAlignment="Center"
+                                           FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+                                        BorderThickness="1"
+                                        BorderBrush="#324C7D"
+                                        Grid.Column="2"
+                                         Margin="0,0,10,0">
+                                    <StackPanel Orientation="Vertical"
+                                            HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                        Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_three.png" 
+                                           Width="90" 
+                                           Height="90"/>
+
+                                        <Label Content="000980"
+                                               Foreground="#324C7D"
+                                               HorizontalAlignment="Center"
+                                               FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                       Foreground="#324C7D"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Border CornerRadius="3"
+            BorderThickness="1"
+            BorderBrush="#324C7D"
+            Grid.Column="3">
+                                    <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                Margin="10">
+                                        <Image Source="pack://application:,,,/Resources/images/pos_image_three.png" 
+                                                   Width="90" 
+                                                   Height="90"/>
+
+                                        <Label Content="0009805"
+                                                        FontWeight="DemiBold">
+
+                                        </Label>
+                                        <Label Content="Laptop Dell"
+                                       Foreground="#324C7D"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="DemiBold">
+
+                                        </Label>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                            </Grid>
+
+                        </StackPanel>
+
+                    </Border>
+
+                    <!-- End Main Content products list-->
+
+                </Grid>
+                <!-- End Main Content Left -->
+
+                <!-- Begin Main Content Right-->
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="450.00"
+                          FontSize="42"
+                          Foreground="#324C7D"
+                          FontWeight="DemiBold"
+                          HorizontalAlignment="Right"
+                          Grid.Row="0"/>
+
+                    <Grid Grid.Row="1"
+                         Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Margin="0 10 0 0 "
+                             Grid.Row="0" >
+                            <local:UserControlMain />
+                        </Grid>
+
+                        <Border Margin="0 10 0 0"
+                               BorderBrush="#C4C4C4"
+                               BorderThickness="1"
+                               Grid.Row="1"
+                               CornerRadius="3">
+
+                            <Grid Margin="5 5 -5 5" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="25*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Content="Cash"
+                                       FontWeight="DemiBold"
+                                       Grid.Column="0"
+                                        Style="{StaticResource MyButtonStyle}"
+                                       Height="40"
+                                        VerticalContentAlignment="Center"></Button>
+
+
+                                <Button Content="Card"
+                                       FontWeight="DemiBold"
+                                       Grid.Column="1"
+                                        Style="{StaticResource MyButtonStyle}"
+                                        Height="40"
+                                        VerticalContentAlignment="Center"></Button>
+
+
+                                <Button Content="Cheque"
+                                       FontWeight="DemiBold"
+                                       Grid.Column="2"
+                                       Style="{StaticResource MyButtonStyle}"
+                                        Height="40"
+                                       VerticalContentAlignment="Center"></Button>
+
+
+                                <Button Content="EFT"
+                                       FontWeight="DemiBold"
+                                       Grid.Column="3"
+                                        Style="{StaticResource MyButtonStyle}"
+                                        Height="40"
+                                        VerticalContentAlignment="Center"></Button>
+
+                            </Grid>
+
+                        </Border>
+
+                        <Border BorderBrush="#324C7D"
+                               BorderThickness="1"
+                               CornerRadius="3"
+                               Grid.Row="2"
+                               Margin="0 10 0 0">
+
+
+                            <Label Content="500.00"
+                                  Foreground="#324C7D"
+                                  FontSize="22"
+                                  FontWeight="DemiBold"
+                                  HorizontalAlignment="Right"
+                                  Margin="6 0"/>
+
+                        </Border>
+
+                        <Grid Grid.Row="3" 
+                             Margin="0 3 0 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="86"/>
+                                <RowDefinition Height="86"/>
+                                <RowDefinition Height="50"/>
+
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="0"
+                                       Background="#2875C5"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="20"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                           Style="{StaticResource calcButton}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="1"
+                                       Background="#2875C5"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="50"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                            Style="{StaticResource calcButton}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="2"
+                                       Background="#2875C5"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="100"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                            Style="{StaticResource calcButton}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="3"
+                                       Background="#2875C5"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="200"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                            Style="{StaticResource calcButton}">
+
+                                    </Button>
+
+                                </Border>
+
+
+
+
+
+                            </Grid>
+
+                            <Grid Grid.Row="1" Margin="0 3 0 0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="0"
+                                       Grid.Row="0"
+                                       Background="#C4C4C4"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="9"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                                 VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                                Foreground="#324C7D"
+                                                 Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="1"
+                                         Grid.Row="0"
+                                       Background="#C4C4C4"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="8"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                           Background="Transparent" 
+                                            VerticalContentAlignment="Center"
+                                           BorderThickness="0"
+                                           Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="2"
+                                         Grid.Row="0"
+                                       Background="#C4C4C4"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="7"
+                                           FontWeight="DemiBold"
+                                           Foreground="#324C7D"
+                                           HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="3"
+                                       Grid.RowSpan="2"
+                                       Background="#F39F2B"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="Pay"
+                                       FontWeight="DemiBold"
+                                       HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                       Background="Transparent" 
+                                       BorderThickness="0"
+                                        Style="{StaticResource calcButtonYellow}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="0"
+                                       Grid.Row="1"
+                                       Background="#C4C4C4"
+                                       Margin="0 3 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="6"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                           Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="1"
+                                         Grid.Row="1"
+                                       Background="#C4C4C4"
+                                       Margin="0 3 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="5"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                           Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="2"
+                                         Grid.Row="2"
+                                       Background="#C4C4C4"
+                                       Margin="0 3 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="4"
+                                       FontWeight="DemiBold"
+                                       Foreground="#324C7D"
+                                       HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                       Background="Transparent" 
+                                       BorderThickness="0"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+
+
+                            </Grid>
+
+
+                            <Grid Grid.Row="2" Margin="0 3 0 0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="0"
+                                       Grid.Row="0"
+                                       Background="#C4C4C4"
+                                       Margin="0 0 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="3"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                           Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        Background="#C4C4C4"
+                                        Margin="0 0 3 0"
+                                        CornerRadius="2">
+                                    <Button Content="2"
+                                            FontWeight="DemiBold"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Background="Transparent" 
+                                            BorderThickness="0"
+                                            Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                        Grid.Column="2"
+                                        Grid.Row="0"
+                                        Background="#C4C4C4"
+                                        Margin="0 0 3 0"
+                                        CornerRadius="2">
+                                    <Button Content="1"
+                                            FontWeight="DemiBold"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Background="Transparent" 
+                                            BorderThickness="0"
+                                            Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                        Grid.Column="3"
+                                        Grid.RowSpan="2"
+                                        Background="#2875C5"
+                                        Margin="0 0 3 0"
+                                        CornerRadius="2">
+                                    <Button Content="Cancel"
+                                            FontWeight="DemiBold"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Background="Transparent" 
+                                            BorderThickness="0"
+                                            Foreground="#FFFFFF"
+                                           Style="{StaticResource calcButtonBlue}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                        Grid.Column="0"
+                                        Grid.Row="1"
+                                        Background="#C4C4C4"
+                                        Margin="0 3 3 0"
+                                        CornerRadius="2">
+                                    <Button Content="0"
+                                            FontWeight="DemiBold"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Background="Transparent" 
+                                            BorderThickness="0"
+                                            Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                        Grid.Column="1"
+                                        Grid.Row="1"
+                                        Background="#C4C4C4"
+                                        Margin="0 3 3 0"
+                                        CornerRadius="2">
+                                    <Button Content="."
+                                           Padding="8"
+                                            FontWeight="DemiBold"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Background="Transparent" 
+                                            BorderThickness="0"
+                                            Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                       Grid.Column="2"
+                                       Grid.Row="1"
+                                       Background="#C4C4C4"
+                                       Margin="0 3 3 0"
+                                       CornerRadius="2">
+                                    <Button Content="X"
+                                           FontWeight="DemiBold"
+                                           HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                           Background="Transparent" 
+                                           BorderThickness="0"
+                                           Foreground="#324C7D"
+                                            Style="{StaticResource calcButtonGrey}">
+
+                                    </Button>
+
+                                </Border>
+
+
+                            </Grid>
+
+                            <Grid Grid.Row="3"  Margin="0 3 0 0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0"
+                                        Grid.Column="0"
+                                        Background="#2875C5"
+                                        Margin="0 0 3 3"
+                                        CornerRadius="2">
+                                    <StackPanel Orientation="Horizontal"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center">
+                                        <Label Content="Split Bill"
+                                              FontWeight="DemiBold"
+                                              Margin="5 0"/>
+                                        <Image Source="pack://application:,,,/Resources/images/pos_split_bill.png" Width="20"/>
+                                    </StackPanel>
+
+
+                                </Border>
+
+                                <Border BorderThickness="0"
+                                         Grid.Column="1"
+                                         Background="#F39F2B"
+                                         Margin="0 0 3 0"
+                                         CornerRadius="2">
+                                    <StackPanel Orientation="Horizontal"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center">
+                                        <Label Content="Check Out"
+                                              FontWeight="DemiBold"
+                                              Margin="5 0"/>
+                                        <Image Source="pack://application:,,,/Resources/images/pos_checkout.png" Width="20"/>
+                                    </StackPanel>
+
+                                </Border>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+                <!-- End Main Content Right -->
+            </Grid>
+
+
+            <!-- End Main Content -->
+        </Grid>
     </Grid>
 </Window>
