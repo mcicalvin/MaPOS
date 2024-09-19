@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Masoft.POS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d178b607e1e524b56ac8f86620508e36a6f89387")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dabe183cabd35eb24d2a60c1f59fcceaba2191e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Masoft.POS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Masoft.POS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
