@@ -23,14 +23,14 @@
 
         <!-- Begin Header -->
         <Grid Height="80"
-              Background="#324C7D"
+              Background="{StaticResource primaryBrush}"
               Grid.Row="0"
               Grid.Column="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="pack://application:,,,/Resources/Images/logo.png" Width="100" Grid.Column="0"/>
+            <Image Source="pack://application:,,,/Resources/Images/mas_white.png" Width="100" Grid.Column="0"/>
             <Grid Grid.Column="1" 
                  Margin="0 0 10  0">
                 <Grid.ColumnDefinitions>
@@ -240,7 +240,7 @@
 
                 <Label Content="450.00"
                           FontSize="42"
-                          Foreground="#324C7D"
+                          Foreground="{StaticResource primaryBrush}"
                           FontWeight="DemiBold"
                           HorizontalAlignment="Right"
                           Grid.Row="0"/>
@@ -308,7 +308,7 @@
 
                     </Border>
 
-                    <Border BorderBrush="#324C7D"
+                    <Border BorderBrush="{StaticResource primaryBrush}"
                                BorderThickness="1"
                                CornerRadius="3"
                                Grid.Row="2"
@@ -548,7 +548,7 @@
                                        CornerRadius="2">
                                 <Button Content="4"
                                        FontWeight="DemiBold"
-                                       Foreground="#324C7D"
+                                       Foreground="{StaticResource primaryBrush}"
                                        HorizontalContentAlignment="Center"
                                             VerticalContentAlignment="Center"
                                        Background="Transparent" 
@@ -590,7 +590,7 @@
                                             VerticalContentAlignment="Center"
                                            Background="Transparent" 
                                            BorderThickness="0"
-                                           Foreground="#324C7D"
+                                           Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -609,7 +609,7 @@
                                             VerticalContentAlignment="Center"
                                             Background="Transparent" 
                                             BorderThickness="0"
-                                            Foreground="#324C7D"
+                                            Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -628,7 +628,7 @@
                                             VerticalContentAlignment="Center"
                                             Background="Transparent" 
                                             BorderThickness="0"
-                                            Foreground="#324C7D"
+                                            Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -705,7 +705,7 @@
                                             VerticalContentAlignment="Center"
                                            Background="Transparent" 
                                            BorderThickness="0"
-                                           Foreground="#324C7D"
+                                           Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>

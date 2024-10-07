@@ -6,39 +6,31 @@
              xmlns:local="clr-namespace:Masoft.POS.Views.UserControls"
              mc:Ignorable="d" 
               d:DesignWidth="800">
-    <UserControl.Resources>
-        <Style TargetType="DataGridColumnHeader">
-            <Setter Property="Background" Value="#324C7D" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Height" Value="20" />
-        </Style>
-    </UserControl.Resources>
-    <Grid Margin="0">
-        <DataGrid x:Name="DataGridInput"
-                  AutoGenerateColumns="False"
-                  CanUserAddRows="False"
-                  CanUserDeleteRows="True"
-                  
-                 ItemsSource="{Binding UserTableCollection, ElementName=UserTableControl}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Description" Width="*" Binding="{Binding Description}" />
-                <DataGridTextColumn Header="Qty" Width="0.2*" Binding="{Binding Qty}" />
-                <DataGridTextColumn Header="Price" Width="0.3*" Binding="{Binding Price}"/>
-                <DataGridTextColumn Header="Total" Width="0.3*"  Binding="{Binding Total}"/>
-                <DataGridTemplateColumn Header=" " Width="0.2*" >
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Image Source="{Binding ActionImage}" Width="25" />
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
 
-            
-        </DataGrid>
-        
-        
+    <Grid Margin="0">
+        <ListView x:Name="ListViewInput"
+          ItemsSource="{Binding UserTableCollection, ElementName=UserTableControl}"
+          AllowDrop="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Description" Width="200" DisplayMemberBinding="{Binding Description}" />
+                    <GridViewColumn Header="Qty" Width="80" DisplayMemberBinding="{Binding Qty}" />
+                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Price}" />
+                    <GridViewColumn Header="Total" Width="100" DisplayMemberBinding="{Binding Total}" />
+                    <GridViewColumn Header=" " Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding ActionImage}" Width="25" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+
     </Grid>
     
 </UserControl>
