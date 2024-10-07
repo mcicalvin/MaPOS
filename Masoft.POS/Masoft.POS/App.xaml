@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Masoft.POS"
              StartupUri="MainWindow.xaml">
+    
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/styles/color.xaml" />
+                <ResourceDictionary Source="Resources/styles/buttonStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="14"/>
             <!-- Change the font size as needed -->
@@ -17,159 +23,28 @@
             <Setter Property="Foreground" Value="#324C7D"/>
         </Style>
 
-        <Style TargetType="Button" x:Key="ButtonStyles">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Foreground" Value="white"/>
-            <Setter Property="Background" Value="#324C7D"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#324C7D"/>
-                    <Setter Property="Foreground" Value="#3F5F9A"/>
-                    <Setter Property="Cursor" Value="Hand"/>
-                </Trigger>
-            </Style.Triggers>
+            <Style x:Key="borderStyle" TargetType="Border">
+                <Setter Property="Background" Value="#2875C5"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="CornerRadius" Value="2"/>
+                <Setter Property="Margin" Value="0 0 3 0"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="BorderBrush" Value="LightBlue" />
+                        <Setter Property="BorderThickness" Value="2" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
 
-        </Style>
-
-
-
-        <Style x:Key="MyButtonStyle" TargetType="Button">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#324C7D"/>
-            <Setter Property="Margin" Value="0 0 10 0"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#3F5F9A"/>
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+            <Style TargetType="GridViewColumnHeader">
+                <Setter Property="Background" Value="#324C7D" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Height" Value="20" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+            </Style>
 
 
-
-        <Style  x:Key="calcButton" TargetType="Button">
-            <Setter Property="FontSize" Value="14"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="white"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#2A80D9"/>
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="borderStyle" TargetType="Border">
-            <Setter Property="Background" Value="#2875C5"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="CornerRadius" Value="2"/>
-            <Setter Property="Margin" Value="0 0 3 0"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="BorderBrush" Value="LightBlue" />
-                    <Setter Property="BorderThickness" Value="2" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-
-
-        <Style  x:Key="calcButtonGrey" TargetType="Button">
-            <Setter Property="FontSize" Value="14"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="white"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#DCD6D6"/>
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style  x:Key="calcButtonYellow" TargetType="Button">
-            <Setter Property="FontSize" Value="14"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="white"/>
-            <Setter Property="Height" Value="80"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#FFAC3A"/>
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style  x:Key="calcButtonBlue" TargetType="Button">
-            <Setter Property="FontSize" Value="14"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="white"/>
-            <Setter Property="Height" Value="80"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#2A80D9"/>
-                                <Setter Property="Cursor" Value="Hand"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\ic_close.png" />
     <None Remove="Resources\Images\logo.png" />
+    <None Remove="Resources\Images\mas.svg" />
+    <None Remove="Resources\Images\masoft.png" />
+    <None Remove="Resources\Images\mas_white.png" />
     <None Remove="Resources\Images\pos_checkout.png" />
     <None Remove="Resources\Images\pos_clear.png" />
     <None Remove="Resources\Images\pos_clocking.png" />
@@ -26,6 +30,7 @@
     <None Remove="Resources\Images\pos_image_two.svg" />
     <None Remove="Resources\Images\pos_laptop.svg" />
     <None Remove="Resources\Images\pos_log_out.png" />
+    <None Remove="Resources\Images\pos_mas.svg" />
     <None Remove="Resources\Images\pos_override.png" />
     <None Remove="Resources\Images\pos_products.png" />
     <None Remove="Resources\Images\pos_search.png" />
@@ -43,7 +48,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\ic_close.png" />
     <Resource Include="Resources\Images\logo.png" />
+    <Resource Include="Resources\Images\mas.svg" />
+    <Resource Include="Resources\Images\masoft.png" />
+    <Resource Include="Resources\Images\mas_white.png" />
     <Resource Include="Resources\Images\pos_checkout.png" />
     <Resource Include="Resources\Images\pos_clear.png" />
     <Resource Include="Resources\Images\pos_clocking.png" />
@@ -60,6 +69,7 @@
     <Resource Include="Resources\Images\pos_image_two.svg" />
     <Resource Include="Resources\Images\pos_laptop.svg" />
     <Resource Include="Resources\Images\pos_log_out.png" />
+    <Resource Include="Resources\Images\pos_mas.svg" />
     <Resource Include="Resources\Images\pos_override.png" />
     <Resource Include="Resources\Images\pos_products.png" />
     <Resource Include="Resources\Images\pos_search.png" />
