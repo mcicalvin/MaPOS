@@ -40,7 +40,7 @@
                 <StackPanel Orientation="Horizontal"
                             VerticalAlignment="Center"
                                     Grid.Column="0">
-                    <Label Content="Molemoeng Gaans "
+                    <Label Content="Calvin Masindi"
                            Margin="30 0 40 0"/>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="04/09/2024"/>
