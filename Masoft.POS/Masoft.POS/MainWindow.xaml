@@ -278,7 +278,7 @@
                                         VerticalContentAlignment="Center"></Button>
 
 
-                            <Button Content="Cheque"
+                            <Button Content="Hold"
                                        FontWeight="DemiBold"
                                        Grid.Column="2"
                                        Style="{StaticResource MyButtonStyle}"
@@ -286,7 +286,7 @@
                                        VerticalContentAlignment="Center"></Button>
 
 
-                            <Button Content="EFT"
+                            <Button Content="Clear"
                                        FontWeight="DemiBold"
                                        Grid.Column="3"
                                         Style="{StaticResource MyButtonStyle}"
@@ -479,13 +479,14 @@
                                        Background="#F39F2B"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
-                                <Button Content="Pay"
+                                <Button 
                                        FontWeight="DemiBold"
                                        HorizontalContentAlignment="Center"
                                         VerticalContentAlignment="Center"
                                        Background="Transparent" 
                                        BorderThickness="0"
                                         Style="{StaticResource calcButtonYellow}">
+                                    <Image Source="pack://application:,,,/Resources/images/clear_symbol.png" Width="35"/>
 
                                 </Button>
 
@@ -688,7 +689,7 @@
                                        Background="#C4C4C4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
-                                <Button Content="X"
+                                <Button Content="00"
                                            FontWeight="DemiBold"
                                            HorizontalContentAlignment="Center"
                                             VerticalContentAlignment="Center"
@@ -714,7 +715,8 @@
                             <Button BorderThickness="0"
                                         Grid.Column="0"
                                         Background="#2875C5"
-                                        Margin="0 0 3 0">
+                                        Margin="0 0 3 0"
+                                     Style="{StaticResource calcButtonSplit}">
 
                                 <StackPanel Orientation="Horizontal"
                                                HorizontalAlignment="Center"
@@ -729,6 +731,7 @@
                             <Button BorderThickness="0"
                                          Grid.Column="1"
                                          Background="#F39F2B"
+                                     Style="{StaticResource calcButtonCheckOut}"
                                          Margin="0 0 3 0">
                                 <StackPanel Orientation="Horizontal"
                                                HorizontalAlignment="Center"

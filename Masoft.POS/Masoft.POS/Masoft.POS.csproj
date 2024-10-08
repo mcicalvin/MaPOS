@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\clear_symbol.png" />
     <None Remove="Resources\Images\ic_close.png" />
     <None Remove="Resources\Images\logo.png" />
     <None Remove="Resources\Images\mas.svg" />
@@ -48,6 +49,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\clear_symbol.png" />
     <Resource Include="Resources\Images\ic_close.png" />
     <Resource Include="Resources\Images\logo.png" />
     <Resource Include="Resources\Images\mas.svg" />
