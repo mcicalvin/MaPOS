@@ -41,9 +41,13 @@
                 <Setter Property="Foreground" Value="White" />
                 <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="Height" Value="20" />
-                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="HorizontalContentAlignment" Value="Left" />
             </Style>
 
+            <Style x:Key="headerStyle" TargetType="StackPanel">
+                <Setter Property="Margin" Value="6 8"/>
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>

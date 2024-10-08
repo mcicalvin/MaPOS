@@ -34,14 +34,20 @@
             <Grid Grid.Column="1" 
                  Margin="0 0 10  0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Orientation="Horizontal"
                             VerticalAlignment="Center"
+<<<<<<< HEAD
                                     Grid.Column="0">
                     <Label Content="Calvin Masindi"
+=======
+                                    Grid.Column="0"
+                            >
+                    <Label Content="Molemoeng Gaans "
+>>>>>>> a12ff90134dd5c3fd4483c7b4c6426c2f3b8c696
                            Margin="30 0 40 0"/>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="04/09/2024"/>
@@ -51,13 +57,10 @@
 
 
                 <!-- Begin Header  images-->
-                <Grid 
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Center"
-                           Grid.Column="1">
+                <Grid HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Grid.Column="1">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -68,71 +71,62 @@
                     </Grid.ColumnDefinitions>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="0">
-                        <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical"
+                            Style="{StaticResource headerStyle}">
+                            <Image Source="pack://application:,,,/Resources/Images/pos_daily_products.png" Width="20"/>
+                            <Label Content="Home"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource HeaderButtonStyles}"
+                            Grid.Column="1">
+                        <StackPanel Orientation="Vertical"
+                                    Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/pos_daily_products.png" Width="20"/>
                             <Label Content="Report"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="1">
-                        <StackPanel Orientation="Vertical">
+                            Grid.Column="2">
+                        <StackPanel Orientation="Vertical"
+                                    Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/pos_products.png" Width="20"/>
-                            <Label Content="Products"/>
+                            <Label Content="Inventory"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="2">
-                        <StackPanel Orientation="Vertical">
+                            Grid.Column="3">
+                        <StackPanel Orientation="Vertical"
+                                    Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/pos_hold.png" Width="20"/>
-                            <Label Content="Hold"/>
+                            <Label Content="Holds"/>
                         </StackPanel>
 
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="3">
-                        <StackPanel Orientation="Vertical">
+                            Grid.Column="4">
+                        <StackPanel Orientation="Vertical"
+                                    Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/pos_void.png" Width="20"/>
                             <Label Content="Void"/>
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="4">
-                        <StackPanel Orientation="Vertical">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_override.png" Width="20"/>
-                            <Label Content="Override"/>
-                        </StackPanel>
-                    </Button>
 
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="5">
-                        <StackPanel Orientation="Vertical">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_clear.png" Width="20"/>
-                            <Label Content="Clear"/>
-                        </StackPanel>
-                    </Button>
-
-                    <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="6">
-                        <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical"
+                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/pos_clocking.png" Width="20"/>
                             <Label Content="Clocking"/>
                         </StackPanel>
                     </Button>
 
                     <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="7">
-                        <StackPanel Orientation="Vertical">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_log_out.png" Width="20"/>
-                            <Label Content="Logout"/>
-                        </StackPanel>
-                    </Button>
-                    
-                    <Button Style="{StaticResource HeaderButtonStyles}"
-                            Grid.Column="8">
-                        <StackPanel Orientation="Vertical">
+                            Grid.Column="6">
+                        <StackPanel Orientation="Vertical"
+                                    Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/Resources/Images/ic_close.png" Width="20"/>
-                            <Label Content="Close"/>
+                            <Label Content="Exit"/>
                         </StackPanel>
                     </Button>
                 </Grid>
@@ -162,7 +156,7 @@
                             Grid.Column="0">
                     <!-- Sidebar content -->
                     <StackPanel  Width="260" Background="#FFFFFF">
-                        <Button Content="All Products" Margin="0 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="All Products" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                         <Button Content="Drinks" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                         <Button Content="Dresses" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                         <Button Content="Ladies Clothes" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
@@ -289,7 +283,7 @@
                                         VerticalContentAlignment="Center"></Button>
 
 
-                            <Button Content="Cheque"
+                            <Button Content="Hold"
                                        FontWeight="DemiBold"
                                        Grid.Column="2"
                                        Style="{StaticResource MyButtonStyle}"
@@ -297,7 +291,7 @@
                                        VerticalContentAlignment="Center"></Button>
 
 
-                            <Button Content="EFT"
+                            <Button Content="Clear"
                                        FontWeight="DemiBold"
                                        Grid.Column="3"
                                         Style="{StaticResource MyButtonStyle}"
@@ -490,13 +484,14 @@
                                        Background="#F39F2B"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
-                                <Button Content="Pay"
+                                <Button 
                                        FontWeight="DemiBold"
                                        HorizontalContentAlignment="Center"
                                         VerticalContentAlignment="Center"
                                        Background="Transparent" 
                                        BorderThickness="0"
                                         Style="{StaticResource calcButtonYellow}">
+                                    <Image Source="pack://application:,,,/Resources/images/clear_symbol.png" Width="35"/>
 
                                 </Button>
 
@@ -699,7 +694,7 @@
                                        Background="#C4C4C4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
-                                <Button Content="X"
+                                <Button Content="00"
                                            FontWeight="DemiBold"
                                            HorizontalContentAlignment="Center"
                                             VerticalContentAlignment="Center"
@@ -725,7 +720,8 @@
                             <Button BorderThickness="0"
                                         Grid.Column="0"
                                         Background="#2875C5"
-                                        Margin="0 0 3 0">
+                                        Margin="0 0 3 0"
+                                     Style="{StaticResource calcButtonSplit}">
 
                                 <StackPanel Orientation="Horizontal"
                                                HorizontalAlignment="Center"
@@ -740,6 +736,7 @@
                             <Button BorderThickness="0"
                                          Grid.Column="1"
                                          Background="#F39F2B"
+                                     Style="{StaticResource calcButtonCheckOut}"
                                          Margin="0 0 3 0">
                                 <StackPanel Orientation="Horizontal"
                                                HorizontalAlignment="Center"
