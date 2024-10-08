@@ -9,15 +9,14 @@
 
     <Grid Margin="0">
         <ListView x:Name="ListViewInput"
-          ItemsSource="{Binding UserTableCollection, ElementName=UserTableControl}"
-          AllowDrop="True">
+                  >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Description" Width="200" DisplayMemberBinding="{Binding Description}" />
+                    <GridViewColumn Header="Description" Width="150" DisplayMemberBinding="{Binding Description}" />
                     <GridViewColumn Header="Qty" Width="80" DisplayMemberBinding="{Binding Qty}" />
                     <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Price}" />
                     <GridViewColumn Header="Total" Width="100" DisplayMemberBinding="{Binding Total}" />
-                    <GridViewColumn Header=" " Width="50">
+                    <GridViewColumn Header="Action " Width="50">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <Image Source="{Binding ActionImage}" Width="25" />
@@ -27,10 +26,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
-
-
-
     </Grid>
     
 </UserControl>
