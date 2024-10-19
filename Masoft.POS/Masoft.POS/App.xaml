@@ -60,6 +60,21 @@
                 <Setter Property="VerticalContentAlignment" Value="Center"/>
             </Style>
 
+            <Style TargetType="Label" x:Key="PopupInfoLabel">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="PopupAuthorizationLabel">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0 0 0 20"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
             <!--============================End Label Styles========================================== -->
 
 

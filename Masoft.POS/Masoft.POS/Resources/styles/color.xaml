@@ -37,4 +37,10 @@
     <Color x:Key="black">#000000</Color>
     <SolidColorBrush x:Key="blackBrush" Color="{StaticResource black}"/>
 
-</ResourceDictionary>
+    <Color x:Key="popupBg">#E8E8E8</Color>
+    <SolidColorBrush x:Key="popupBgBrush" Color="{StaticResource popupBg}"/>
+
+    <Color x:Key="saveButton">#04AA6D</Color>
+    <SolidColorBrush x:Key="saveButtonBrush" Color="{StaticResource saveButton}"/>
+
+</ResourceDictionary> 

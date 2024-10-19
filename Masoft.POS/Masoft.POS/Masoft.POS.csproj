@@ -37,6 +37,7 @@
     <None Remove="Resources\Images\pos_search.png" />
     <None Remove="Resources\Images\pos_split_bill.png" />
     <None Remove="Resources\Images\pos_void.png" />
+    <None Remove="Resources\Images\pos_warning.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,7 +45,6 @@
     <Folder Include="Core\Services\" />
     <Folder Include="Models\" />
     <Folder Include="ModelViews\" />
-    <Folder Include="Views\Modals\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>
 
@@ -77,6 +77,7 @@
     <Resource Include="Resources\Images\pos_search.png" />
     <Resource Include="Resources\Images\pos_split_bill.png" />
     <Resource Include="Resources\Images\pos_void.png" />
+    <Resource Include="Resources\Images\pos_warning.png" />
   </ItemGroup>
 
 </Project>

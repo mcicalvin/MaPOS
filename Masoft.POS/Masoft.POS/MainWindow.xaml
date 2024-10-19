@@ -68,7 +68,7 @@
                             Grid.Column="0">
                         <StackPanel Orientation="vertical"
                             Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="24"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="28"/>
                             <Label Content="Home"/>
                         </StackPanel>
                     </Button>
@@ -84,7 +84,7 @@
                             Grid.Column="2">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/pos_products.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_products.png" Width="28"/>
                             <Label Content="Inventory"/>
                         </StackPanel>
                     </Button>
@@ -92,7 +92,7 @@
                             Grid.Column="3">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/pos_hold.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_hold.png" Width="28"/>
                             <Label Content="Holds"/>
                         </StackPanel>
 
@@ -101,7 +101,7 @@
                             Grid.Column="4">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/pos_void.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_void.png" Width="28"/>
                             <Label Content="Void"/>
                         </StackPanel>
                     </Button>
@@ -111,7 +111,7 @@
                             Grid.Column="5">
                         <StackPanel Orientation="vertical"
                                      Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/pos_clocking.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_clocking.png" Width="28"/>
                             <Label Content="Clocking"/>
                         </StackPanel>
                     </Button>
@@ -120,7 +120,7 @@
                             Grid.Column="6">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="28"/>
                             <Label Content="Exit"/>
                         </StackPanel>
                     </Button>

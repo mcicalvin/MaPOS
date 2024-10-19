@@ -61,7 +61,7 @@ namespace Masoft.POS.Views.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Masoft.POS;component/views/usercontrols/ucholdlist.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Masoft.POS;V1.0.0.0;component/views/usercontrols/ucholdlist.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\UserControls\UCHoldList.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
