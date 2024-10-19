@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml
-6-1575235003
+7-1093082382
 
-7-211906338
+81435862066
 198-688555687
-MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProducts.xaml;
+MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\UserControls\UCLoginWithCode.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProduct.xaml;Views\UserControls\UCProducts.xaml;
 
 False
 

@@ -12,7 +12,7 @@
                   >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Description" Width="150"  />
+                    <GridViewColumn Header="Description" Width="100"  />
                     <GridViewColumn Header="Qty" Width="80"  />
                     <GridViewColumn Header="Price" Width="100" />
                     <GridViewColumn Header="Total" Width="100"  />

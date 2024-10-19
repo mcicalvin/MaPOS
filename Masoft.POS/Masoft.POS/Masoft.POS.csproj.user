@@ -7,10 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\UserControls\UCLoginWithCode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\UCLoginWithPassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UserControls\UCMainProductRow.xaml.cs">
+    <Compile Update="Views\UserControls\UCMainProduct.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\UserControls\UCProducts.xaml.cs">
@@ -27,10 +30,13 @@
     <Page Update="Resources\styles\color.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\UserControls\UCLoginWithCode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\UserControls\UCLoginWithPassword.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UserControls\UCMainProductRow.xaml">
+    <Page Update="Views\UserControls\UCMainProduct.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\UCProducts.xaml">

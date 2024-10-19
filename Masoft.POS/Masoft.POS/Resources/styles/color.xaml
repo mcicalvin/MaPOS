@@ -7,4 +7,34 @@
     <Color x:Key="primaryDark">#3F5F9A</Color>
     <SolidColorBrush x:Key="primaryDarkBrush" Color="{StaticResource primaryDark}"/>
     
+    <Color x:Key="secondary">#C4C4C4</Color>
+    <SolidColorBrush x:Key="secondaryBrush" Color="{StaticResource secondary}"/>
+
+    <Color x:Key="secondaryDark">#dcd6d6</Color>
+    <SolidColorBrush x:Key="secondaryDarkBrush" Color="{StaticResource secondaryDark}"/>
+
+    <Color x:Key="blue">#2875c5</Color>
+    <SolidColorBrush x:Key="blueBrush" Color="{StaticResource blue}"/>
+
+    <Color x:Key="blueDark">#2a80d9</Color>
+    <SolidColorBrush x:Key="blueDarkBrush" Color="{StaticResource blueDark}"/>
+
+    <Color x:Key="yellow">#ffac3a</Color>
+    <SolidColorBrush x:Key="yellowBrush" Color="{StaticResource yellow}"/>
+
+    <Color x:Key="yellowDark">#ffac3a</Color>
+    <SolidColorBrush x:Key="yellowDarkBrush" Color="{StaticResource yellow}"/>
+
+    <Color x:Key="red">#ee4d52</Color>
+    <SolidColorBrush x:Key="redBrush" Color="{StaticResource red}"/>
+
+    <Color x:Key="background">#ffffff</Color>
+    <SolidColorBrush x:Key="backgroundBrush" Color="{StaticResource background}"/>
+
+    <Color x:Key="white">#ffffff</Color>
+    <SolidColorBrush x:Key="whiteBrush" Color="{StaticResource white}"/>
+
+    <Color x:Key="black">#000000</Color>
+    <SolidColorBrush x:Key="blackBrush" Color="{StaticResource black}"/>
+
 </ResourceDictionary>

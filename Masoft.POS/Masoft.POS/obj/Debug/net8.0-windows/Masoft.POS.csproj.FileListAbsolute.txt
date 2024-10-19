@@ -5,7 +5,6 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\bin\Debug\net8.0-windows\M
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\bin\Debug\net8.0-windows\Masoft.POS.pdb
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCLoginWithPassword.g.cs
-C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProductRow.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCProducts.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -14,7 +13,6 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\M
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\App.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCLoginWithPassword.baml
-C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProductRow.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCProducts.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Masoft.POS.g.resources
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Masoft.POS.GeneratedMSBuildEditorConfig.editorconfig
@@ -29,3 +27,7 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\M
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\ref\Masoft.POS.dll
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Resources\styles\color.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Resources\styles\buttonStyles.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCLoginWithCode.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCLoginWithCode.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProduct.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProduct.baml
