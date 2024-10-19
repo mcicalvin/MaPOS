@@ -42,7 +42,7 @@
                             VerticalAlignment="center"
                                     Grid.Column="0"
                             >
-                    <Label Content="molemoeng gaans "
+                    <Label Content="Molemoeng Gaans "
                            Margin="30 0 40 0"/>
                     <StackPanel Orientation="horizontal">
                         <Label Content="04/09/2024"/>
@@ -69,7 +69,7 @@
                         <StackPanel Orientation="vertical"
                             Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="24"/>
-                            <Label Content="home"/>
+                            <Label Content="Home"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
@@ -77,7 +77,7 @@
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="28"/>
-                            <Label Content="report"/>
+                            <Label Content="Reports"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
@@ -85,7 +85,7 @@
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_products.png" Width="20"/>
-                            <Label Content="inventory"/>
+                            <Label Content="Inventory"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
@@ -93,7 +93,7 @@
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_hold.png" Width="20"/>
-                            <Label Content="holds"/>
+                            <Label Content="Holds"/>
                         </StackPanel>
 
                     </Button>
@@ -102,7 +102,7 @@
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_void.png" Width="20"/>
-                            <Label Content="void"/>
+                            <Label Content="Void"/>
                         </StackPanel>
                     </Button>
 
@@ -112,7 +112,7 @@
                         <StackPanel Orientation="vertical"
                                      Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/pos_clocking.png" Width="20"/>
-                            <Label Content="clocking"/>
+                            <Label Content="Clocking"/>
                         </StackPanel>
                     </Button>
 
@@ -121,7 +121,7 @@
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
                             <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="20"/>
-                            <Label Content="exit"/>
+                            <Label Content="Exit"/>
                         </StackPanel>
                     </Button>
                 </Grid>
@@ -151,12 +151,12 @@
                             Grid.Column="0">
                      <!--sidebar Content--> 
                     <StackPanel  Width="260" Background="#ffffff">
-                        <Button Content="all products" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
-                        <Button Content="drinks" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
-                        <Button Content="dresses" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
-                        <Button Content="ladies clothes" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
-                        <Button Content="tea" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
-                        <Button Content="coffee" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="All Products" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="Drinks" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="Dresses" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="Ladies Clothes" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="Tea" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
+                        <Button Content="Coffee" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                     </StackPanel>
                 </StackPanel>
 
@@ -262,7 +262,7 @@
                                 <ColumnDefinition Width="25*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Button Content="cash"
+                            <Button Content="Cash"
                                        FontWeight="demibold"
                                        Grid.Column="0"
                                         Style="{StaticResource MyButtonStyle}"
@@ -270,7 +270,7 @@
                                         VerticalContentAlignment="center"></Button>
 
 
-                            <Button Content="card"
+                            <Button Content="Card"
                                        FontWeight="demibold"
                                        Grid.Column="1"
                                         Style="{StaticResource MyButtonStyle}"
@@ -278,7 +278,7 @@
                                         VerticalContentAlignment="center"></Button>
 
 
-                            <Button Content="hold"
+                            <Button Content="Hold"
                                        FontWeight="demibold"
                                        Grid.Column="2"
                                        Style="{StaticResource MyButtonStyle}"
@@ -286,7 +286,7 @@
                                        VerticalContentAlignment="center"></Button>
 
 
-                            <Button Content="clear"
+                            <Button Content="Clear"
                                        FontWeight="demibold"
                                        Grid.Column="3"
                                         Style="{StaticResource MyButtonStyle}"
@@ -633,7 +633,7 @@
                                         Background="#2875c5"
                                         Margin="0 0 3 0"
                                         CornerRadius="2">
-                                <Button Content="cancel"
+                                <Button Content="Cancel"
                                             FontWeight="demibold"
                                             HorizontalContentAlignment="center"
                                             VerticalContentAlignment="center"
@@ -723,7 +723,7 @@
                                 <StackPanel Orientation="horizontal"
                                                HorizontalAlignment="center"
                                                VerticalAlignment="center">
-                                    <Label Content="split bill"
+                                    <Label Content="Split Bill"
                                               FontWeight="demibold"
                                               Margin="5 0"/>
                                     <Image Source="pack://application:,,,/resources/images/pos_split_bill.png" Width="20"/>
@@ -736,9 +736,9 @@
                                      Style="{StaticResource calcButtonCheckOut}"
                                          Margin="0 0 3 0">
                                 <StackPanel Orientation="horizontal"
-                                               HorizontalAlignment="center"
+                                               HorizontalAlignment="Center"
                                                VerticalAlignment="center">
-                                    <Label Content="check out"
+                                    <Label Content="Check Out"
                                               FontWeight="demibold"
                                               Margin="5 0"/>
                                     <Image Source="pack://application:,,,/resources/images/pos_checkout.png" Width="20"/>

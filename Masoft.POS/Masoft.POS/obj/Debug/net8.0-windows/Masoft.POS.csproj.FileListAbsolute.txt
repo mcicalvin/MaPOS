@@ -31,3 +31,11 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\V
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCLoginWithCode.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProduct.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCMainProduct.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCReportsList.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCReportsList.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCProductList.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCProductList.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCHoldList.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCHoldList.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCVoidList.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\UserControls\UCVoidList.baml

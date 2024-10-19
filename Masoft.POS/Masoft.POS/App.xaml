@@ -11,18 +11,96 @@
                 <ResourceDictionary Source="Resources/styles/buttonStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
             
-        <Style TargetType="Label">
-            <Setter Property="FontSize" Value="14"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="White"/>
-            <!-- Change the color as needed -->
+            
+            <!--=========================Begin Label Styles======================================== -->
+         <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Foreground" Value="White"/>
+        </Style>
+            
+            <Style TargetType="Label" x:Key="userConrolHeaderText">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="userConrolTitleText">
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Margin" Value="0 0 0 0 "/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="userConrolTitleValue">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="userConrolTotaltext">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="userConrolTotalValue">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="fontSmall">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <!--============================End Label Styles========================================== -->
+
+
+            <!--=========================Begin Datagrid Styles ================================-->
+            <Style TargetType="DataGrid">
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Foreground" Value="#324C7D"/>
         </Style>
 
-        <Style TargetType="DataGrid">
-            <Setter Property="Padding" Value="0"/>
-            <!-- Change the font size as needed -->
-            <Setter Property="Foreground" Value="#324C7D"/>
-        </Style>
+            <Style TargetType="GridViewColumnHeader">
+                <Setter Property="Background" Value="#324C7D" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Height" Value="20" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="HorizontalContentAlignment" Value="Left" />
+            </Style>
+
+            <Style TargetType="DataGridColumnHeader">
+                <Setter Property="Background" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Height" Value="35"/>
+                <Setter Property="Padding" Value="5"/>
+            </Style>
+
+            <Style TargetType="DataGridCell">
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Padding" Value="5"/>
+            </Style>
+
+            <Style TargetType="DataGridRow" x:Key="AlternatingRowStyle">
+                <Setter Property="Background" Value="{StaticResource secondaryBrush}"/>
+            </Style>
+
+            <!--===========================End Datagrid Styles=========================== -->
+            
+
+            <!--====================Begin Borders Styles============================ -->
 
             <Style x:Key="borderStyle" TargetType="Border">
                 <Setter Property="Background" Value="#2875C5"/>
@@ -37,30 +115,6 @@
                 </Style.Triggers>
             </Style>
 
-            <Style TargetType="GridViewColumnHeader">
-                <Setter Property="Background" Value="#324C7D" />
-                <Setter Property="Foreground" Value="White" />
-                <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Height" Value="20" />
-                <Setter Property="VerticalContentAlignment" Value="Center" />
-                <Setter Property="HorizontalContentAlignment" Value="Left" />
-            </Style>
-
-            <Style x:Key="headerStyle" TargetType="StackPanel">
-                <Setter Property="Margin" Value="6 8"/>
-            </Style>
-
-
-            <Style x:Key="loginTextStyle" TargetType="TextBox">
-                <Setter Property="Height" Value="35"/>
-                <Setter Property="FontSize" Value="18"/>
-                <Setter Property="Padding" Value="5"/>
-                <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="BorderBrush" Value="{StaticResource primaryBrush}"/>
-                <Setter Property="VerticalContentAlignment" Value="Center"/>
-                
-            </Style>
-
             <Style x:Key="loginBorderStyle" TargetType="Border">
                 <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="BorderBrush" Value="{StaticResource primaryBrush}"/>
@@ -73,6 +127,34 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
+
+            <!--=================End Border Styles=============== -->
+
+           
+
+            <!--================Begin Stackpanel Styles================ -->
+
+            <Style x:Key="headerStyle" TargetType="StackPanel">
+                <Setter Property="Margin" Value="6 8"/>
+            </Style>
+
+            <!--==================End Stackpanel Styles===================== -->
+
+
+            <!--===================Begin Textbox Styles ================-->
+            <Style x:Key="loginTextStyle" TargetType="TextBox">
+                <Setter Property="Height" Value="35"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                
+            </Style>
+
+            <!--=================End Textbox Styles============================== -->
+
+           
 
 
         </ResourceDictionary>
