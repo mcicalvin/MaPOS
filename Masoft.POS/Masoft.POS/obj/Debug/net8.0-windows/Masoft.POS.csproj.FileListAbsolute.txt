@@ -45,3 +45,7 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\V
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\HoldConfirmationPopup.baml
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\AuthorizationPopup.g.cs
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\AuthorizationPopup.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\CheckOutPopup.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\SplitBillPopup.g.cs
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\CheckOutPopup.baml
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\Views\Popups\SplitBillPopup.baml

@@ -75,6 +75,15 @@
                 <Setter Property="VerticalContentAlignment" Value="Center"/>
             </Style>
 
+
+            <Style TargetType="Label" x:Key="spiltPopupText">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Margin" Value="0 0 0 0 "/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
             <!--============================End Label Styles========================================== -->
 
 

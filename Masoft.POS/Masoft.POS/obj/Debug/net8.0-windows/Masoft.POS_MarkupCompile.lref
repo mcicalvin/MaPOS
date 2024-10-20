@@ -2,8 +2,10 @@
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\MainWindow.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\AuthorizationPopup.xaml;;
+FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\CheckOutPopup.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldCheckOutPopup.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldConfirmationPopup.xaml;;
+FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\SplitBillPopup.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCHoldList.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithCode.xaml;;
 FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithPassword.xaml;;

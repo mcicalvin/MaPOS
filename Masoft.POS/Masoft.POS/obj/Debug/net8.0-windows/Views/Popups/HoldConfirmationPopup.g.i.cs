@@ -53,7 +53,7 @@ namespace Masoft.POS.Views.Popups {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Masoft.POS;V1.0.0.0;component/views/popups/holdconfirmationpopup.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Masoft.POS;component/views/popups/holdconfirmationpopup.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Popups\HoldConfirmationPopup.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

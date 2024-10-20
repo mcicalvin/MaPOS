@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
         mc:Ignorable="d"
-        Title="SplitBillPopup" Height="450" Width="700"
+        Title="SplitBillPopup" Height="400" Width="700"
         WindowStyle="None">
     <Border BorderBrush="{StaticResource primaryBrush}"
          BorderThickness="1">
@@ -33,7 +33,8 @@
                 <Button Grid.Column="1"
                     HorizontalAlignment="Right"
                      HorizontalContentAlignment="Right"
-                        Margin="10 0"
+                        Margin="20 0"
+                        Padding="5"
                      Style="{StaticResource popupExitButtonStyles}">
                     <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="30" Height="28"/>
                 </Button>
@@ -54,6 +55,58 @@
 
                     <Grid Grid.Column="0"
                           Margin="0 0 10 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <DataGrid Name="MyDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
+                                           HeadersVisibility="None" 
+                                           GridLinesVisibility="None">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn  Binding="{Binding Time}" Width="*"/>
+                                    <DataGridTextColumn  Binding="{Binding Total}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+
+                        </Grid>
+                        <Grid Grid.Row="1"
+                               VerticalAlignment="Bottom">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="0"  Grid.Column="0">
+                                <Label Content="Total:"
+                                   Style="{StaticResource spiltPopupText}"/>
+                                <Label Content="R 400.00"
+                                 Style="{StaticResource spiltPopupText}"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="1"  Grid.Column="0">
+                                <Label Content="Change:"
+                                Style="{StaticResource spiltPopupText}"/>
+                                <Label Content="R 10.00"
+                                 Style="{StaticResource spiltPopupText}"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="0"  Grid.Column="1"
+                                        HorizontalAlignment="Right">
+                                <Label Content="Remaining:"
+                                      Style="{StaticResource spiltPopupText}"/>
+                                <Label Content="R 250.00"
+                                    Style="{StaticResource spiltPopupText}"/>
+                            </StackPanel>
+
+                            
+                        </Grid>
+
 
                     </Grid>
 
@@ -84,7 +137,8 @@
 
                         </Border>
 
-                        <Grid Grid.Row="1">
+                        <Grid Grid.Row="1"
+                              Margin="0 2 0 1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -93,6 +147,7 @@
                             </Grid.ColumnDefinitions>
                             
                             <Button Content="9"
+                                       Margin="0 1 1 1"
                                     Grid.Column="0"
                                     Style="{StaticResource calcButtonGrey}">
                                 
@@ -100,16 +155,19 @@
 
                             <Button Content="8"
                                  Grid.Column="1"
+                                       Margin="1 1 1 1"
                                  Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
                             <Button Content="7"
+                                       Margin="1 1 1 1"
                                      Grid.Column="2"
                                      Style="{StaticResource calcButtonGrey}">
 
                             </Button>
                             <Button Content="Add"
+                                       Margin="1 1 0 1"
                                      Grid.Column="3"
                                      Style="{StaticResource calcButtonGrey}"
                                     Background="{StaticResource saveButtonBrush}"
@@ -119,7 +177,8 @@
                         </Grid>
 
 
-                        <Grid Grid.Row="2">
+                        <Grid Grid.Row="2"
+                               Margin="0 1 0 1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -129,30 +188,34 @@
 
                             <Button Content="6"
                               Grid.Column="0"
+                                       Margin="0 1 1 1"
                               Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
                             <Button Content="5"
                                Grid.Column="1"
+                                       Margin="1 1 1 1"
                                Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
                             <Button Content="4"
                                Grid.Column="2"
+                                       Margin="1 1 1 1"
                                Style="{StaticResource calcButtonGrey}">
 
                             </Button>
                             <Button Content="C"
                                    Grid.Column="3"
                                     FontWeight="SemiBold"
+                                       Margin="1 1 0 1"
                                    Style="{StaticResource calcButton}">
 
                             </Button>
                         </Grid>
 
-                        <Grid Grid.Row="3">
+                        <Grid Grid.Row="3"  Margin="0 1 0 1">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
@@ -164,49 +227,56 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Button Content="6"
+                            <Button Content="3"
                                    Grid.Column="0"
                                     Grid.Row="0"
+                                       Margin="0 1 1 1"
                                    Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
-                            <Button Content="5"
+                            <Button Content="2"
                                    Grid.Column="1"
                                      Grid.Row="0"
+                                       Margin="1 1 1 1"
                                    Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
-                            <Button Content="4"
+                            <Button Content="1"
                                Grid.Column="2"
+                                      Margin="1 1 1 1"
                                      Grid.Row="0"
                                Style="{StaticResource calcButtonGrey}">
 
                             </Button>
-                            <Button Content="Add"
+                            <Button  Margin="1 0 0 1"
                                    Grid.Column="3"
                                     Grid.RowSpan="2"
                                    Style="{StaticResource calcButtonYellow}">
+                                <Image Source="pack://application:,,,/resources/images/clear_symbol.png" Width="30" Height="28"/>
 
                             </Button>
 
-                            <Button Content="6"
+                            <Button Content="0"
                                Grid.Column="0"
                                 Grid.Row="1"
+                                     Margin="0 1 1 1"
                                Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
-                            <Button Content="5"
+                            <Button Content="."
                                    Grid.Column="1"
                                      Grid.Row="1"
+                                    Margin="1 1 1 1"
                                    Style="{StaticResource calcButtonGrey}">
 
                             </Button>
 
-                            <Button Content="4"
+                            <Button Content="00"
                                    Grid.Column="2"
+                                    Margin="1 1 1 1"
                                          Grid.Row="1"
                                    Style="{StaticResource calcButtonGrey}">
 
@@ -227,13 +297,61 @@
                     </Grid.ColumnDefinitions>
 
                     <Border Grid.Column="0"
-                     Margin="0 0 10 0">
+                     Margin="0 10 10 0"
+                             BorderBrush="{StaticResource secondaryBrush}"
+                             BorderThickness="1"
+                             CornerRadius="3"
+                             Padding="5">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Cash"
+                                    Grid.Column="0"
+                                    Style="{StaticResource ButtonStyles}"
+                                    Margin="0 0 3 0 ">
+
+                            </Button>
+
+                            <Button Content="Card"
+                                    Margin="3 0 0 0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource ButtonStyles}">
+
+                            </Button>
+                        </Grid>
 
                     </Border>
 
                     <Border Grid.Column="1"
-                           Margin="10 0 0 0">
-                        
+                           Margin="10 10 0 0"
+                            BorderBrush="{StaticResource secondaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="3"
+                            Padding="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Cancel"
+                                    Grid.Column="0"
+                                    Style="{StaticResource cancelButton}"
+                                    Margin="0 0 3 0 ">
+                                
+                            </Button>
+
+                            <Button Content="Proceed"
+                                    Margin="3 0 0 0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource saveButton}">
+
+                            </Button>
+                        </Grid>
 
                     </Border>
                 </Grid>
