@@ -9,12 +9,21 @@ Masoft.POS
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\App.xaml
 6-1575235003
 
 9337621189
 198-556154604
 MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProducts.xaml;
+=======
+C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml
+15-939953584
 
-False
+181227842864
+198-688555687
+MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\Popups\AuthorizationPopup.xaml;Views\Popups\HoldCheckOutPopup.xaml;Views\Popups\HoldConfirmationPopup.xaml;Views\Popups\SplitBillPopup.xaml;Views\UserControls\UCHoldList.xaml;Views\UserControls\UCLoginWithCode.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProductList.xaml;Views\UserControls\UCProducts.xaml;Views\UserControls\UCReportsList.xaml;Views\UserControls\UCVoidList.xaml;
+>>>>>>> f53f5ca8b0ceafdf0d97542c9fb3f5a30ebdeb97
+
+True
 

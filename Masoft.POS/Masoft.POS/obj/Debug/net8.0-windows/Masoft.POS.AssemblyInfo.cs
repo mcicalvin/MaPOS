@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9515d465766f07cf6c48ea88ce36a46741efb3fe")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc12864588e92a445fa386dfe0a50225597006c")]
 >>>>>>> a12ff90134dd5c3fd4483c7b4c6426c2f3b8c696
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> f53f5ca8b0ceafdf0d97542c9fb3f5a30ebdeb97
 [assembly: System.Reflection.AssemblyProductAttribute("Masoft.POS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Masoft.POS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

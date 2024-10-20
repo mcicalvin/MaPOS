@@ -11,8 +11,8 @@
          Background="#E8E8E8"
         WindowStyle="None"
         Title="MainWindow" Height="550" Width="1280">
-    
-    <Grid Background="#FFFFFF">
+   
+    <Grid Background="#ffffff">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
@@ -21,7 +21,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Begin Header -->
+         <!--begin header--> 
         <Grid Height="80"
               Background="{StaticResource primaryBrush}"
               Grid.Row="0"
@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="pack://application:,,,/Resources/Images/mas_white.png" Width="100" Grid.Column="0"/>
+            <Image Source="pack://application:,,,/resources/images/mas_white.png" Width="100" Grid.Column="0"/>
             <Grid Grid.Column="1" 
                  Margin="0 0 10  0">
                 <Grid.ColumnDefinitions>
@@ -38,27 +38,32 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
                 <StackPanel Orientation="Horizontal"
                             VerticalAlignment="Center"
 <<<<<<< HEAD
                                     Grid.Column="0">
                     <Label Content="Calvin Masindi"
 =======
+=======
+                <StackPanel Orientation="horizontal"
+                            VerticalAlignment="center"
+>>>>>>> f53f5ca8b0ceafdf0d97542c9fb3f5a30ebdeb97
                                     Grid.Column="0"
                             >
                     <Label Content="Molemoeng Gaans "
 >>>>>>> a12ff90134dd5c3fd4483c7b4c6426c2f3b8c696
                            Margin="30 0 40 0"/>
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="horizontal">
                         <Label Content="04/09/2024"/>
                         <Label Content="12:45"/>
                     </StackPanel>
                 </StackPanel>
 
 
-                <!-- Begin Header  images-->
-                <Grid HorizontalAlignment="Stretch"
-                            VerticalAlignment="Stretch"
+                 <!--begin header  images-->
+                <Grid HorizontalAlignment="stretch"
+                            VerticalAlignment="stretch"
                             Grid.Column="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -71,42 +76,42 @@
                     </Grid.ColumnDefinitions>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="0">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                             Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_daily_products.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="28"/>
                             <Label Content="Home"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="1">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_daily_products.png" Width="20"/>
-                            <Label Content="Report"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_daily_products.png" Width="28"/>
+                            <Label Content="Reports"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="2">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_products.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_products.png" Width="28"/>
                             <Label Content="Inventory"/>
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="3">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_hold.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_hold.png" Width="28"/>
                             <Label Content="Holds"/>
                         </StackPanel>
 
                     </Button>
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="4">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_void.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_void.png" Width="28"/>
                             <Label Content="Void"/>
                         </StackPanel>
                     </Button>
@@ -114,48 +119,48 @@
 
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="5">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                      Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/pos_clocking.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/pos_clocking.png" Width="28"/>
                             <Label Content="Clocking"/>
                         </StackPanel>
                     </Button>
 
                     <Button Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="6">
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
-                            <Image Source="pack://application:,,,/Resources/Images/ic_close.png" Width="20"/>
+                            <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="28"/>
                             <Label Content="Exit"/>
                         </StackPanel>
                     </Button>
                 </Grid>
 
 
-                <!-- End Header images-->
+                 <!--end header images-->
             </Grid>
 
         </Grid>
-        <!-- End Header -->
+         <!--end header--> 
         
-        <!-- Begin Sidebar and Main Content -->
+         <!--begin sidebar and main Content-->
         <Grid Grid.Row="1" Grid.Column="0"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.7*"/>
                 <ColumnDefinition Width="0.3*"/>
             </Grid.ColumnDefinitions>
-            <!-- Begin Sidebar and products -->
+             <!--begin sidebar and products-->
             <Grid  Grid.Column="0" Margin="0 10 0 0 ">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Sidebar content -->
-                <StackPanel  Background="#FFFFFF"
+                 <!--sidebar Content--> 
+                <StackPanel  Background="#ffffff"
                             Grid.Column="0">
-                    <!-- Sidebar content -->
-                    <StackPanel  Width="260" Background="#FFFFFF">
+                     <!--sidebar Content--> 
+                    <StackPanel  Width="260" Background="#ffffff">
                         <Button Content="All Products" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                         <Button Content="Drinks" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
                         <Button Content="Dresses" Margin="10 6" Padding="10"  Style="{StaticResource MyButtonStyle}"/>
@@ -165,17 +170,17 @@
                     </StackPanel>
                 </StackPanel>
 
-                <!-- Begin Main Content PRoducts-->
+                 <!--begin main Content products-->
                 <Grid Grid.Column="1" Margin="20 10 10 0" >
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Begin Main Content search-->
+                     <!--begin main Content search-->
                     <Border Grid.Row="0"
                                     BorderThickness="1"
-                                    BorderBrush="#C4C4C4"
+                                    BorderBrush="#c4c4c4"
                                     CornerRadius="3 "
                            >
                         <Grid >
@@ -184,30 +189,30 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Image Source="pack://application:,,,/Resources/images/pos_search.png" Width="35"
+                            <Image Source="pack://application:,,,/resources/images/pos_search.png" Width="35"
            Grid.Column="0"
            Margin="10 6"/>
                             <TextBox  FontSize="16"
               Margin="10"
-              BorderBrush="Transparent"
+              BorderBrush="transparent"
               BorderThickness="0"
               Grid.Column="1"
-              VerticalContentAlignment="Center"
-              FontWeight="Normal"
+              VerticalContentAlignment="center"
+              FontWeight="normal"
               />
                         </Grid>
 
                     </Border>
 
-                    <!-- End Main Content search-->
+                     <!--end main Content search-->
 
-                    <!-- Begin Main Content products list-->
+                     <!--begin main Content products list-->
                     <Border Grid.Row="1"
                           BorderThickness="1"
-                          BorderBrush="#C4C4C4"
+                          BorderBrush="#c4c4c4"
                            CornerRadius="3"
                            Margin="0 20 0 20">               
-                        <StackPanel Orientation="Vertical"
+                        <StackPanel Orientation="vertical"
            Margin="10 ">
 
                             <local:UCProducts />
@@ -217,15 +222,15 @@
 
                     </Border>
 
-                    <!-- End Main Content products list-->
+                     <!--end main Content products list-->
 
                 </Grid>
-                <!-- End Main Content Products -->
+                 <!--end main Content products--> 
             </Grid>
-            <!-- End Sidebar  -->
+             <!--end sidebar-->  
 
 
-            <!-- Begin Main Content Right-->
+             <!--begin main Content right-->
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
@@ -235,8 +240,8 @@
                 <Label Content="450.00"
                           FontSize="42"
                           Foreground="{StaticResource primaryBrush}"
-                          FontWeight="DemiBold"
-                          HorizontalAlignment="Right"
+                          FontWeight="demibold"
+                          HorizontalAlignment="right"
                           Grid.Row="0"/>
 
                 <Grid Grid.Row="1"
@@ -254,7 +259,7 @@
                     </Grid>
 
                     <Border Margin="0 10 0 0"
-                               BorderBrush="#C4C4C4"
+                               BorderBrush="#c4c4c4"
                                BorderThickness="1"
                                Grid.Row="1"
                                CornerRadius="3">
@@ -268,35 +273,35 @@
                             </Grid.ColumnDefinitions>
 
                             <Button Content="Cash"
-                                       FontWeight="DemiBold"
+                                       FontWeight="demibold"
                                        Grid.Column="0"
                                         Style="{StaticResource MyButtonStyle}"
                                        Height="40"
-                                        VerticalContentAlignment="Center"></Button>
+                                        VerticalContentAlignment="center"></Button>
 
 
                             <Button Content="Card"
-                                       FontWeight="DemiBold"
+                                       FontWeight="demibold"
                                        Grid.Column="1"
                                         Style="{StaticResource MyButtonStyle}"
                                         Height="40"
-                                        VerticalContentAlignment="Center"></Button>
+                                        VerticalContentAlignment="center"></Button>
 
 
                             <Button Content="Hold"
-                                       FontWeight="DemiBold"
+                                       FontWeight="demibold"
                                        Grid.Column="2"
                                        Style="{StaticResource MyButtonStyle}"
                                         Height="40"
-                                       VerticalContentAlignment="Center"></Button>
+                                       VerticalContentAlignment="center"></Button>
 
 
                             <Button Content="Clear"
-                                       FontWeight="DemiBold"
+                                       FontWeight="demibold"
                                        Grid.Column="3"
                                         Style="{StaticResource MyButtonStyle}"
                                         Height="40"
-                                        VerticalContentAlignment="Center"></Button>
+                                        VerticalContentAlignment="center"></Button>
 
                         </Grid>
 
@@ -305,18 +310,20 @@
                     <Border BorderBrush="{StaticResource primaryBrush}"
                                BorderThickness="1"
                                CornerRadius="3"
+                            
                                Grid.Row="2"
                                Margin="0 10 0 0">
+                        
 
 
                         <TextBox Text="500.00"
-                                  Foreground="#324C7D"
+                                  Foreground="#324c7d"
                                   FontSize="22"
-                                  FontWeight="DemiBold"
+                                  FontWeight="demibold"
                                   Margin="6 0"
                                      BorderThickness="0"
-                                      HorizontalAlignment="Stretch"
-                                      TextAlignment="Right"/>
+                                      HorizontalAlignment="stretch"
+                                      TextAlignment="right"/>
 
                     </Border>
 
@@ -340,13 +347,13 @@
 
                             <Border BorderThickness="0"
                                        Grid.Column="0"
-                                       Background="#2875C5"
+                                       Background="#2875c5"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="20"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                            Style="{StaticResource calcButton}">
 
@@ -356,13 +363,13 @@
 
                             <Border BorderThickness="0"
                                        Grid.Column="1"
-                                       Background="#2875C5"
+                                       Background="#2875c5"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="50"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                             Style="{StaticResource calcButton}">
 
@@ -372,13 +379,13 @@
 
                             <Border BorderThickness="0"
                                        Grid.Column="2"
-                                       Background="#2875C5"
+                                       Background="#2875c5"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="100"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                             Style="{StaticResource calcButton}">
 
@@ -388,13 +395,13 @@
 
                             <Border BorderThickness="0"
                                        Grid.Column="3"
-                                       Background="#2875C5"
+                                       Background="#2875c5"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="200"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                             Style="{StaticResource calcButton}">
 
@@ -424,16 +431,16 @@
                             <Border BorderThickness="0"
                                        Grid.Column="0"
                                        Grid.Row="0"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="9"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                                 VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                                 VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
-                                                Foreground="#324C7D"
+                                                Foreground="#324c7d"
                                                  Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -443,16 +450,16 @@
                             <Border BorderThickness="0"
                                        Grid.Column="1"
                                          Grid.Row="0"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="8"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                           Background="Transparent" 
-                                            VerticalContentAlignment="Center"
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                           Background="transparent" 
+                                            VerticalContentAlignment="center"
                                            BorderThickness="0"
-                                           Foreground="#324C7D"
+                                           Foreground="#324c7d"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -462,15 +469,15 @@
                             <Border BorderThickness="0"
                                        Grid.Column="2"
                                          Grid.Row="0"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="7"
-                                           FontWeight="DemiBold"
-                                           Foreground="#324C7D"
-                                           HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           Foreground="#324c7d"
+                                           HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                             Style="{StaticResource calcButtonGrey}">
 
@@ -481,17 +488,17 @@
                             <Border BorderThickness="0"
                                        Grid.Column="3"
                                        Grid.RowSpan="2"
-                                       Background="#F39F2B"
+                                       Background="#f39f2b"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button 
-                                       FontWeight="DemiBold"
-                                       HorizontalContentAlignment="Center"
-                                        VerticalContentAlignment="Center"
-                                       Background="Transparent" 
+                                       FontWeight="demibold"
+                                       HorizontalContentAlignment="center"
+                                        VerticalContentAlignment="center"
+                                       Background="transparent" 
                                        BorderThickness="0"
                                         Style="{StaticResource calcButtonYellow}">
-                                    <Image Source="pack://application:,,,/Resources/images/clear_symbol.png" Width="35"/>
+                                    <Image Source="pack://application:,,,/resources/images/clear_symbol.png" Width="35"/>
 
                                 </Button>
 
@@ -500,16 +507,16 @@
                             <Border BorderThickness="0"
                                        Grid.Column="0"
                                        Grid.Row="1"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
                                 <Button Content="6"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
-                                           Foreground="#324C7D"
+                                           Foreground="#324c7d"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -519,16 +526,16 @@
                             <Border BorderThickness="0"
                                        Grid.Column="1"
                                          Grid.Row="1"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
                                 <Button Content="5"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
-                                           Foreground="#324C7D"
+                                           Foreground="#324c7d"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -538,15 +545,15 @@
                             <Border BorderThickness="0"
                                        Grid.Column="2"
                                          Grid.Row="2"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
                                 <Button Content="4"
-                                       FontWeight="DemiBold"
+                                       FontWeight="demibold"
                                        Foreground="{StaticResource primaryBrush}"
-                                       HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                       Background="Transparent" 
+                                       HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                       Background="transparent" 
                                        BorderThickness="0"
                                             Style="{StaticResource calcButtonGrey}">
 
@@ -576,14 +583,14 @@
                             <Border BorderThickness="0"
                                        Grid.Column="0"
                                        Grid.Row="0"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 0 3 0"
                                        CornerRadius="2">
                                 <Button Content="3"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                            Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
@@ -595,14 +602,14 @@
                             <Border BorderThickness="0"
                                         Grid.Column="1"
                                         Grid.Row="0"
-                                        Background="#C4C4C4"
+                                        Background="#c4c4c4"
                                         Margin="0 0 3 0"
                                         CornerRadius="2">
                                 <Button Content="2"
-                                            FontWeight="DemiBold"
-                                            HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                            Background="Transparent" 
+                                            FontWeight="demibold"
+                                            HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                            Background="transparent" 
                                             BorderThickness="0"
                                             Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
@@ -614,14 +621,14 @@
                             <Border BorderThickness="0"
                                         Grid.Column="2"
                                         Grid.Row="0"
-                                        Background="#C4C4C4"
+                                        Background="#c4c4c4"
                                         Margin="0 0 3 0"
                                         CornerRadius="2">
                                 <Button Content="1"
-                                            FontWeight="DemiBold"
-                                            HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                            Background="Transparent" 
+                                            FontWeight="demibold"
+                                            HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                            Background="transparent" 
                                             BorderThickness="0"
                                             Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
@@ -633,16 +640,16 @@
                             <Border BorderThickness="0"
                                         Grid.Column="3"
                                         Grid.RowSpan="2"
-                                        Background="#2875C5"
+                                        Background="#2875c5"
                                         Margin="0 0 3 0"
                                         CornerRadius="2">
                                 <Button Content="Cancel"
-                                            FontWeight="DemiBold"
-                                            HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                            Background="Transparent" 
+                                            FontWeight="demibold"
+                                            HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                            Background="transparent" 
                                             BorderThickness="0"
-                                            Foreground="#FFFFFF"
+                                            Foreground="#ffffff"
                                            Style="{StaticResource calcButtonBlue}">
 
                                 </Button>
@@ -652,16 +659,16 @@
                             <Border BorderThickness="0"
                                         Grid.Column="0"
                                         Grid.Row="1"
-                                        Background="#C4C4C4"
+                                        Background="#c4c4c4"
                                         Margin="0 3 3 0"
                                         CornerRadius="2">
                                 <Button Content="0"
-                                            FontWeight="DemiBold"
-                                            HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                            Background="Transparent" 
+                                            FontWeight="demibold"
+                                            HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                            Background="transparent" 
                                             BorderThickness="0"
-                                            Foreground="#324C7D"
+                                            Foreground="#324c7d"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -671,17 +678,17 @@
                             <Border BorderThickness="0"
                                         Grid.Column="1"
                                         Grid.Row="1"
-                                        Background="#C4C4C4"
+                                        Background="#c4c4c4"
                                         Margin="0 3 3 0"
                                         CornerRadius="2">
                                 <Button Content="."
                                            Padding="8"
-                                            FontWeight="DemiBold"
-                                            HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                            Background="Transparent" 
+                                            FontWeight="demibold"
+                                            HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                            Background="transparent" 
                                             BorderThickness="0"
-                                            Foreground="#324C7D"
+                                            Foreground="#324c7d"
                                             Style="{StaticResource calcButtonGrey}">
 
                                 </Button>
@@ -691,14 +698,14 @@
                             <Border BorderThickness="0"
                                        Grid.Column="2"
                                        Grid.Row="1"
-                                       Background="#C4C4C4"
+                                       Background="#c4c4c4"
                                        Margin="0 3 3 0"
                                        CornerRadius="2">
                                 <Button Content="00"
-                                           FontWeight="DemiBold"
-                                           HorizontalContentAlignment="Center"
-                                            VerticalContentAlignment="Center"
-                                           Background="Transparent" 
+                                           FontWeight="demibold"
+                                           HorizontalContentAlignment="center"
+                                            VerticalContentAlignment="center"
+                                           Background="transparent" 
                                            BorderThickness="0"
                                            Foreground="{StaticResource primaryBrush}"
                                             Style="{StaticResource calcButtonGrey}">
@@ -719,32 +726,32 @@
 
                             <Button BorderThickness="0"
                                         Grid.Column="0"
-                                        Background="#2875C5"
+                                        Background="#2875c5"
                                         Margin="0 0 3 0"
                                      Style="{StaticResource calcButtonSplit}">
 
-                                <StackPanel Orientation="Horizontal"
-                                               HorizontalAlignment="Center"
-                                               VerticalAlignment="Center">
+                                <StackPanel Orientation="horizontal"
+                                               HorizontalAlignment="center"
+                                               VerticalAlignment="center">
                                     <Label Content="Split Bill"
-                                              FontWeight="DemiBold"
+                                              FontWeight="demibold"
                                               Margin="5 0"/>
-                                    <Image Source="pack://application:,,,/Resources/images/pos_split_bill.png" Width="20"/>
+                                    <Image Source="pack://application:,,,/resources/images/pos_split_bill.png" Width="20"/>
                                 </StackPanel>
                             </Button>
 
                             <Button BorderThickness="0"
                                          Grid.Column="1"
-                                         Background="#F39F2B"
+                                         Background="#f39f2b"
                                      Style="{StaticResource calcButtonCheckOut}"
                                          Margin="0 0 3 0">
-                                <StackPanel Orientation="Horizontal"
+                                <StackPanel Orientation="horizontal"
                                                HorizontalAlignment="Center"
-                                               VerticalAlignment="Center">
+                                               VerticalAlignment="center">
                                     <Label Content="Check Out"
-                                              FontWeight="DemiBold"
+                                              FontWeight="demibold"
                                               Margin="5 0"/>
-                                    <Image Source="pack://application:,,,/Resources/images/pos_checkout.png" Width="20"/>
+                                    <Image Source="pack://application:,,,/resources/images/pos_checkout.png" Width="20"/>
                                 </StackPanel>
                             </Button>
                         </Grid>
@@ -752,12 +759,12 @@
                 </Grid>
 
             </Grid>
-            <!-- End Main Content Right -->
+             <!--end main Content right--> 
 
            
 
 
-            <!-- End Main Content -->
+             <!--end main Content--> 
         </Grid>
     </Grid>
 </Window>

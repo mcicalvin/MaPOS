@@ -7,13 +7,40 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Popups\AuthorizationPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Popups\HoldCheckOutPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Popups\HoldConfirmationPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Popups\SplitBillPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UCHoldList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UCLoginWithCode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\UCLoginWithPassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\UserControls\UCMainProductRow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\UserControls\UCProductList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\UCProducts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UCReportsList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UCVoidList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,13 +54,40 @@
     <Page Update="Resources\styles\color.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Popups\AuthorizationPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Popups\HoldCheckOutPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Popups\HoldConfirmationPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Popups\SplitBillPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UCHoldList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UCLoginWithCode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\UserControls\UCLoginWithPassword.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\UCMainProductRow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\UserControls\UCProductList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\UserControls\UCProducts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UCReportsList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UCVoidList.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
