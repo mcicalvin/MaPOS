@@ -1,7 +1,7 @@
 *.suo
 *.user
 _ReSharper.*
-.vs
+/.vs
 bin
 obj
 packages
