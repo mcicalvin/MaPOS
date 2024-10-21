@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-﻿C:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\App.xaml;;
 FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\MainWindow.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\AuthorizationPopup.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldCheckOutPopup.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldConfirmationPopup.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\SplitBillPopup.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCHoldList.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithCode.xaml;;
 FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithPassword.xaml;;
 FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCMainProductRow.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCProductList.xaml;;
 FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCProducts.xaml;;
-=======
-﻿C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\MainWindow.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\AuthorizationPopup.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldCheckOutPopup.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\Popups\HoldConfirmationPopup.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCHoldList.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithCode.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCLoginWithPassword.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCMainProductRow.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCProductList.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCProducts.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCReportsList.xaml;;
-FC:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCVoidList.xaml;;
->>>>>>> f53f5ca8b0ceafdf0d97542c9fb3f5a30ebdeb97
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCReportsList.xaml;;
+FC:\Applications\Masoft\MaPOS\Masoft.POS\Masoft.POS\Views\UserControls\UCVoidList.xaml;;
 

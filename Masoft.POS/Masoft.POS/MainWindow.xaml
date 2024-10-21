@@ -32,28 +32,22 @@
             </Grid.ColumnDefinitions>
             <Image Source="pack://application:,,,/resources/images/mas_white.png" Width="100" Grid.Column="0"/>
             <Grid Grid.Column="1" 
-                 Margin="0 0 10  0">
+                 Margin="0 0 3 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-<<<<<<< HEAD
+
                 <StackPanel Orientation="Horizontal"
                             VerticalAlignment="Center"
-<<<<<<< HEAD
+
                                     Grid.Column="0">
-                    <Label Content="Calvin Masindi"
-=======
-=======
-                <StackPanel Orientation="horizontal"
-                            VerticalAlignment="center"
->>>>>>> f53f5ca8b0ceafdf0d97542c9fb3f5a30ebdeb97
-                                    Grid.Column="0"
-                            >
-                    <Label Content="Molemoeng Gaans "
->>>>>>> a12ff90134dd5c3fd4483c7b4c6426c2f3b8c696
-                           Margin="30 0 40 0"/>
+                    <Label Content="Calvin Masindi" 
+
+   Grid.Column="0"
+                            />
+
                     <StackPanel Orientation="horizontal">
                         <Label Content="04/09/2024"/>
                         <Label Content="12:45"/>
