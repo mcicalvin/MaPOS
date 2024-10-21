@@ -54,8 +54,7 @@
                     </StackPanel>
                 </StackPanel>
 
-
-                 <!--begin header  images-->
+                <!--begin header  images-->
                 <Grid HorizontalAlignment="stretch"
                             VerticalAlignment="stretch"
                             Grid.Column="1">
