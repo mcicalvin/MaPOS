@@ -20,5 +20,17 @@ namespace Masoft.POS
 		{
 			InitializeComponent();
 		}
-	}
+
+		private void Close_Click(object sender, RoutedEventArgs e)
+		{
+			var msgBox = MessageBox.Show("Are you sure you want to close this system?",
+				"Exit application", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+			if(msgBox == MessageBoxResult.Yes)
+			{
+				Application.Current.Shutdown();
+			}
+        }
+
+    }
 }

@@ -18,9 +18,9 @@ namespace Masoft.POS.Views.UserControls
     /// <summary>
     /// Interaction logic for UserControlMain.xaml
     /// </summary>
-    public partial class UserControlMain : UserControl
+    public partial class UCMainProductRow : UserControl
     {
-        public UserControlMain()
+        public UCMainProductRow()
         {
             InitializeComponent();
             LoadData();
@@ -31,10 +31,10 @@ namespace Masoft.POS.Views.UserControls
         {
             List<Item> items = new List<Item>
             {
-                new Item { Description = "Item 1", Qty = 7, Price = 19.99, Total = 19.99, ActionImage = "pack://application:,,,/Resources/Images/pos_delete.png"  },
-                new Item { Description = "Item 2", Qty = 5, Price = 29.99, Total = 19.99, ActionImage = "pack://application:,,,/Resources/Images/pos_delete.png" }
+                new Item { Description = "Item 1", Qty = 7, Price = 19.99, Total = 19.99, ActionImage = "pack://application:,,,/Resources/Images/pos_delete.png"},
+                new Item { Description = "Item 2", Qty = 5, Price = 29.99, Total = 19.99, ActionImage = "pack://application:,,,/Resources/Images/pos_delete.png"}
             };
-            DataGridInput.ItemsSource = items;
+           // ListViewInput.ItemsSource = items;
         }
     }
 

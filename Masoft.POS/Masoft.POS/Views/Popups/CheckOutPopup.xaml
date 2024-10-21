@@ -1,0 +1,258 @@
+﻿<Window x:Class="Masoft.POS.Views.Popups.CheckOutPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
+        mc:Ignorable="d"
+        Title="CheckOutPopup" Height="430" Width="500"
+        WindowStyle="None">
+
+    <Border BorderBrush="{StaticResource primaryBrush}"
+     BorderThickness="1">
+        <Grid Background="White"
+      >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="{StaticResource primaryBrush}"
+                 Grid.Row="0"
+                 >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Checkout"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   FontSize="18"
+                   FontWeight="SemiBold"/>
+
+                <Button Grid.Column="1"
+                HorizontalAlignment="Right"
+                 HorizontalContentAlignment="Right"
+                    Margin="20 0"
+                    Padding="5"
+                 Style="{StaticResource popupExitButtonStyles}">
+                    <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="30" Height="28"/>
+                </Button>
+
+            </Grid>
+
+            <Grid Margin="70 20"
+              Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="86"/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderBrush="{StaticResource primaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="3"
+                            Grid.Row="0"
+                            Height="40"
+                            Margin="0 10 0 0">
+
+                        <TextBox Text="500.00"
+                               Foreground="#324c7d"
+                               FontSize="22"
+                               FontWeight="demibold"
+                               Margin="6 0"
+                                  BorderThickness="0"
+                                  VerticalAlignment="Center"
+                                   HorizontalAlignment="stretch"
+                                   TextAlignment="right" />
+
+                    </Border>
+
+                    <Grid Grid.Row="1"
+                            Margin="0 2 0 1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Content="9"
+                                Margin="0 1 1 1"
+                             Grid.Column="0"
+                                Grid.Row="0"
+                             Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="8"
+                          Grid.Column="1"
+                                 Grid.Row="0"
+                                Margin="1 1 1 1"
+                          Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="7"
+                            Margin="1 1 1 1"
+                                 Grid.Row="0"
+                          Grid.Column="2"
+                          Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+                        
+                        <Button Content="C"
+                                Grid.Column="3"
+                                 Grid.RowSpan="2"
+                                 FontWeight="SemiBold"
+                                    Margin="1 1 0 1"
+                                Style="{StaticResource calcButtonBlue}">        
+
+                            </Button>
+
+                        <Button Content="6"
+                               Grid.Column="0"
+                                Grid.Row="1"
+                                        Margin="0 1 1 1"
+                               Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="5"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                        Margin="1 1 1 1"
+                                Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="4"
+                                Grid.Column="2"
+                                Grid.Row="1"
+                                        Margin="1 1 1 1"
+                                Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+                    </Grid>
+
+
+
+                    <Grid Grid.Row="3"  Margin="0 0 0 1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Content="3"
+                        Grid.Column="0"
+                         Grid.Row="0"
+                            Margin="0 1 1 1"
+                        Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="2"
+                            Grid.Column="1"
+                              Grid.Row="0"
+                                Margin="1 1 1 1"
+                            Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="1"
+                            Grid.Column="2"
+                                   Margin="1 1 1 1"
+                                  Grid.Row="0"
+                            Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+                        <Button  Margin="1 0 0 1"
+                                Grid.Column="3"
+                                 Grid.RowSpan="2"
+                                Style="{StaticResource calcButtonYellow}">
+                            <Image Source="pack://application:,,,/resources/images/clear_symbol.png" Width="30" Height="28"/>
+
+                        </Button>
+
+                        <Button Content="0"
+                            Grid.Column="0"
+                             Grid.Row="1"
+                                  Margin="0 1 1 1"
+                            Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="."
+                            Grid.Column="1"
+                              Grid.Row="1"
+                             Margin="1 1 1 1"
+                            Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+
+                        <Button Content="00"
+                            Grid.Column="2"
+                             Margin="1 1 1 1"
+                                  Grid.Row="1"
+                            Style="{StaticResource calcButtonGrey}">
+
+                        </Button>
+                    </Grid>
+
+
+
+
+                </Grid>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0 15" >
+                    <Label Content="Change:"
+                            Style="{StaticResource spiltPopupText}"/>
+                    <Label Content="R 10.00"
+                             Style="{StaticResource spiltPopupText}"/>
+                </StackPanel>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Cancel"
+                         Grid.Column="0"
+                         Style="{StaticResource cancelButton}"
+                         Margin="0 0 3 0 ">
+
+                    </Button>
+
+                    <Button Content="Proceed"
+                         Margin="3 0 0 0"
+                         Grid.Column="1"
+                         Style="{StaticResource saveButton}">
+
+                    </Button>
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>

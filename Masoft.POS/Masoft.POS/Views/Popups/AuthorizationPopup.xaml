@@ -1,0 +1,219 @@
+﻿<Window x:Class="Masoft.POS.Views.Popups.AuthorizationPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
+        mc:Ignorable="d"
+        Title="AuthorazationPopup" Height="380" Width="480"
+        WindowStyle="None">
+    <Border BorderBrush="{StaticResource primaryBrush}"
+      BorderThickness="1">
+        <Grid Background="#E8E8E8"
+       >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="{StaticResource primaryBrush}"
+                  Grid.Row="0"
+                  >
+                <Button HorizontalAlignment="Right"
+                  HorizontalContentAlignment="Right"
+                  Style="{StaticResource popupExitButtonStyles}">
+                    <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="30" Height="28"/>
+                </Button>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="30 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid
+                Grid.Row="0">
+                    <Label Content="AUTHORIZATION REQUESTED TO PROCESS"
+                           Style="{StaticResource PopupAuthorizationLabel}"/>
+
+                </Grid>
+
+                <Border Grid.Row="1"
+                        BorderBrush="{StaticResource secondaryBrush}"
+                        BorderThickness="1"
+                        CornerRadius="3"
+                        Height="50"
+                        Background="{StaticResource whiteBrush}">
+                    
+                    <TextBox Text="Pin Number"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             HorizontalContentAlignment="Center"
+                             FontSize="18"
+                             FontWeight="SemiBold"
+                             BorderBrush="Transparent"
+                             BorderThickness="0"
+                             MinWidth="300"
+                             />
+
+
+                </Border>
+
+                <Grid Grid.Row="2" Margin="0 20 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!--Begin First row Buttons-->
+                    <Grid  Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Begin First row Buttons-->
+
+                        <Button Content="0"
+                            Grid.Column="0"
+                            Style="{StaticResource popupButtonGrey}"
+                                Margin="0 0 3 0">
+
+                        </Button>
+                        <Button Content="1"
+                             Grid.Column="1"
+                                Margin="3 0"
+                             Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="2"
+                             Grid.Column="2"
+                                Margin="3 0"
+                             Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="3"
+                             Grid.Column="3"
+                                Margin="3 0"
+                             Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="4"
+                             Grid.Column="4"
+                                Margin="3 0"
+                             Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="5"
+                             Grid.Column="5"
+                                Margin="3 0 0 0 "
+                             Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+
+                        <!--End First row Buttons-->
+                    </Grid>
+
+                    <!--End First row Buttons-->
+
+                    <!--Begin Second row Buttons-->
+                    <Grid  Grid.Row="1"
+                           Margin=" 0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Begin Second row Buttons-->
+
+                        <Button Content="6"
+                          Grid.Column="0"
+                                 Margin="0 0 3 0"
+                          Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="7"
+                           Grid.Column="1"
+                                 Margin="3 0"
+                           Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="8"
+                           Grid.Column="2"
+                                 Margin="3 0"
+                           Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="9"
+                           Grid.Column="3"
+                                 Margin="3 0"
+                           Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button Content="00"
+                               Grid.Column="4"
+                                 Margin="3 0"
+                               Style="{StaticResource popupButtonGrey}">
+
+                        </Button>
+                        <Button 
+                           Grid.Column="5"
+                                 Margin="3 0 0 0"
+                            Background="{StaticResource yellowBrush}"
+                           Style="{StaticResource popupButtonGrey}">
+                            <Image Source="pack://application:,,,/resources/images/clear_symbol.png" Width="24"/>
+                        </Button>
+
+                        <!--End Second row Buttons-->
+                    </Grid>
+                    <!--Begin End row Buttons-->
+
+                </Grid>
+                
+                
+
+                <Grid Grid.Row="3"
+                Margin="0 20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Clear"
+                               Grid.Column="0"
+                               Style="{StaticResource cancelButton}"
+                             Margin=" 0 0 10 0">
+
+                    </Button>
+
+                    <Button Content="Cancel"
+                   Grid.Column="1"
+                   Style="{StaticResource saveButton}"
+                            Background="{StaticResource primaryBrush}"
+                   Margin=" 10 0">
+
+                    </Button>
+
+                    <Button Content="Proceed"
+                        Grid.Column="2"
+                             Margin=" 10 0 0 0"
+                        Style="{StaticResource saveButton}">
+
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
