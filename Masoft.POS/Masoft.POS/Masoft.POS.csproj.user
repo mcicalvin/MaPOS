@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Popups\AddQuantityPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Popups\AuthorizationPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Popups\CheckOutPopup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Popups\HoldCheckOutPopup.xaml.cs">
@@ -54,7 +60,13 @@
     <Page Update="Resources\styles\color.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Popups\AddQuantityPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Popups\AuthorizationPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Popups\CheckOutPopup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Popups\HoldCheckOutPopup.xaml">
