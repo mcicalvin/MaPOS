@@ -120,7 +120,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{StaticResource HeaderButtonStyles}"
+                    <Button Click="Close_Click" Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="6">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
