@@ -6,4 +6,4 @@ bin
 obj
 packages
 ".vs/*"  
-Masoft.POS/.vs
+**/.vs

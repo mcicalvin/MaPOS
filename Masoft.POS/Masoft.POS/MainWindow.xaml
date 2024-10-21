@@ -54,6 +54,7 @@
                     </StackPanel>
                 </StackPanel>
 
+                
                 <!--begin header  images-->
                 <Grid HorizontalAlignment="stretch"
                             VerticalAlignment="stretch"
