@@ -1,0 +1,130 @@
+﻿<Window x:Class="Masoft.POS.Views.Popups.PaymentPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="PaymentPopup" Height="450" Width="300">
+    <Border BorderBrush="{StaticResource primaryBrush}"
+         BorderThickness="1">
+        <Grid Background="White"
+              Margin="10 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0"
+                        Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        >
+
+                <Label Content="Masindi Franchise"
+                       Style="{StaticResource AddressHeader}"/>
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                         Grid.Row="1"
+                        HorizontalAlignment="Center">
+                <Label Content="Kuruman,"
+                  Style="{StaticResource AddressSubTitle}"/>
+                <Label Content="Northern Cape,"
+                  Style="{StaticResource AddressSubTitle}"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Tel:"
+                      Style="{StaticResource AddressSubTitle}"/>
+
+                    <Label Content="053 2187262"
+                     Style="{StaticResource AddressSubTitle}"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+              Grid.Row="2"
+             HorizontalAlignment="Center">
+                <Label Content="8 Riversands , Van Der Heuwel Rds"
+                  Style="{StaticResource AddressSubTitle}"/>
+                
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="3">
+                <Label Content="Cashier:"
+                      Style="{StaticResource AddressSubTitle}"/>
+                <Label Content="Molemoeng Gaans"
+                      Style="{StaticResource AddressSubTitle}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="4">
+                
+            </StackPanel>
+
+            <Border BorderBrush="{StaticResource secondaryBrush} "
+                    BorderThickness="1"
+              Grid.Row="5">
+
+            </Border>
+
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        Grid.Row="6">
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Amount Redendered:"
+                        Style="{StaticResource AddressSubTitle}"/>
+                    <Label Content="R 1800.00"
+                       Style="{StaticResource AddressSubTitle}"/>
+
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Amount Due:"
+                        Style="{StaticResource AddressSubTitle}"/>
+                    <Label Content="R 1800.00"
+                       Style="{StaticResource AddressSubTitle}"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Vat"
+                            Style="{StaticResource AddressSubTitle}"/>
+                    <Label Content="R 800.00"
+                           Style="{StaticResource AddressSubTitle}"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Change"
+                        Style="{StaticResource AddressSubTitle}"/>
+                    <Label Content="R 800.00"
+                   Style="{StaticResource AddressSubTitle}"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+            <Grid Grid.Row="7"
+                  HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>

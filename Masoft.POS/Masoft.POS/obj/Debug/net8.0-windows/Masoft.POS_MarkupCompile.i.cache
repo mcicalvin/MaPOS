@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml
-171758942777
+19-1237642511
 
-201955529501
+22-1728937252
 198-688555687
-MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\Popups\AddQuantityPopup.xaml;Views\Popups\AuthorizationPopup.xaml;Views\Popups\CheckOutPopup.xaml;Views\Popups\HoldCheckOutPopup.xaml;Views\Popups\HoldConfirmationPopup.xaml;Views\Popups\SplitBillPopup.xaml;Views\UserControls\UCHoldList.xaml;Views\UserControls\UCLoginWithCode.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProductList.xaml;Views\UserControls\UCProducts.xaml;Views\UserControls\UCReportsList.xaml;Views\UserControls\UCVoidList.xaml;
+MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\Popups\AddQuantityPopup.xaml;Views\Popups\AuthorizationPopup.xaml;Views\Popups\CheckOutPopup.xaml;Views\Popups\ClockingPopup.xaml;Views\Popups\HoldCheckOutPopup.xaml;Views\Popups\HoldConfirmationPopup.xaml;Views\Popups\PaymentPopup.xaml;Views\Popups\SplitBillPopup.xaml;Views\UserControls\UCHoldList.xaml;Views\UserControls\UCLoginWithCode.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProductList.xaml;Views\UserControls\UCProducts.xaml;Views\UserControls\UCReportsList.xaml;Views\UserControls\UCVoidList.xaml;
 
 True
 

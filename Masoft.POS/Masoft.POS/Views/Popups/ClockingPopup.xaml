@@ -1,0 +1,81 @@
+﻿<Window x:Class="Masoft.POS.Views.Popups.ClockingPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="ClockingPopup" Height="210" Width="450">
+    <Border BorderBrush="{StaticResource primaryBrush}"
+         BorderThickness="1">
+        <Grid Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="{StaticResource primaryBrush}"
+           Grid.Row="0"
+           >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Clocking"
+             VerticalAlignment="Center"
+             Margin="10 0"
+             FontSize="16"
+             FontWeight="SemiBold"/>
+
+                <Button Grid.Column="1"
+          HorizontalAlignment="Right"
+           HorizontalContentAlignment="Right"
+              Margin="20 0"
+              Padding="5"
+           Style="{StaticResource popupExitButtonStyles}">
+                    <Image Source="pack://application:,,,/resources/images/ic_close.png" Width="30" Height="28"/>
+                </Button>
+
+            </Grid>
+
+            <Grid Grid.Row="1"
+                  Margin="40 ">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                         Grid.Column="0"
+                         Style="{StaticResource saveButton}"
+                         Height="60"
+                         Margin="0 0 3 0 ">
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Clock in"/>
+                        <Image Source="pack://application:,,,/resources/images/clocking_in.png" Width="24" Height="24"/>
+
+                    </StackPanel>
+
+                </Button>
+
+                <Button 
+                     Margin="3 0 0 0"
+                     Grid.Column="1"
+                    Height="60"
+                     Style="{StaticResource cancelButton}">
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Clock out"/>
+                        <Image Source="pack://application:,,,/resources/images/clocking_out.png" Width="24" Height="24"/>
+
+                    </StackPanel>
+
+                </Button>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>

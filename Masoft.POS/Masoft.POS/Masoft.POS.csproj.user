@@ -16,10 +16,16 @@
     <Compile Update="Views\Popups\CheckOutPopup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Popups\ClockingPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Popups\HoldCheckOutPopup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Popups\HoldConfirmationPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Popups\PaymentPopup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Popups\SplitBillPopup.xaml.cs">
@@ -69,10 +75,16 @@
     <Page Update="Views\Popups\CheckOutPopup.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Popups\ClockingPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Popups\HoldCheckOutPopup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Popups\HoldConfirmationPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Popups\PaymentPopup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Popups\SplitBillPopup.xaml">

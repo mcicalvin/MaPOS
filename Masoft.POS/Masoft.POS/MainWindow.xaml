@@ -10,7 +10,7 @@
          WindowState="Maximized"
          Background="#E8E8E8"
         WindowStyle="None"
-        Title="MainWindow" Height="550" Width="1280">
+        Title="MainWindow" Height="700" Width="1280">
    
     <Grid Background="#ffffff">
         <Grid.ColumnDefinitions>
@@ -32,26 +32,30 @@
             </Grid.ColumnDefinitions>
             <Image Source="pack://application:,,,/resources/images/mas_white.png" Width="100" Grid.Column="0"/>
             <Grid Grid.Column="1" 
-                 Margin="0 0 10  0">
+                 Margin="0 0 3 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel Orientation="horizontal"
-                            VerticalAlignment="center"
-                                    Grid.Column="0"
-                            >
-                    <Label Content="Molemoeng Gaans "
-                           Margin="30 0 40 0"/>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+
+                                    Grid.Column="0">
+                    <Label Content="Calvin Masindi" 
+
+   Grid.Column="0"
+                            />
+
                     <StackPanel Orientation="horizontal">
                         <Label Content="04/09/2024"/>
                         <Label Content="12:45"/>
                     </StackPanel>
                 </StackPanel>
 
-
-                 <!--begin header  images-->
+                
+                <!--begin header  images-->
                 <Grid HorizontalAlignment="stretch"
                             VerticalAlignment="stretch"
                             Grid.Column="1">
@@ -116,7 +120,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{StaticResource HeaderButtonStyles}"
+                    <Button Click="Close_Click" Style="{StaticResource HeaderButtonStyles}"
                             Grid.Column="6">
                         <StackPanel Orientation="vertical"
                                     Style="{StaticResource headerStyle}">
@@ -312,10 +316,12 @@
                                   FontWeight="demibold"
                                   Margin="6 0"
                                      BorderThickness="0"
+                                 VerticalAlignment="Center"
                                       HorizontalAlignment="stretch"
                                       TextAlignment="right"/>
 
                     </Border>
+                    
 
                     <Grid Grid.Row="3" 
                              Margin="0 3 0 0">

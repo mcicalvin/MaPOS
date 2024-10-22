@@ -84,6 +84,22 @@
                 <Setter Property="VerticalContentAlignment" Value="Center"/>
             </Style>
 
+            <Style TargetType="Label" x:Key="AddressHeader">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="AddressSubTitle">
+                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Normal"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
             <!--============================End Label Styles========================================== -->
 
 
@@ -174,6 +190,14 @@
                 <Setter Property="BorderBrush" Value="{StaticResource primaryBrush}"/>
                 <Setter Property="VerticalContentAlignment" Value="Center"/>
                 
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="PopupInfoText">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Foreground" Value="{StaticResource primaryBrush}"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="TextAlignment" Value="Center"/>
             </Style>
 
             <!--=================End Textbox Styles============================== -->

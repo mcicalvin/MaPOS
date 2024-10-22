@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
         mc:Ignorable="d"
-        Title="AddQuantityPopup" Height="450" Width="800" WindowStyle="None">
+        Title="AddQuantityPopup" Height="380" Width="350" WindowStyle="None">
 
 
     <Border BorderBrush="{StaticResource primaryBrush}"
@@ -27,7 +27,7 @@
                 <Label Content="Add Quantity"
                 VerticalAlignment="Center"
                 Margin="10 0"
-                FontSize="18"
+                FontSize="16"
                 FontWeight="SemiBold"/>
 
                 <Button Grid.Column="1"
@@ -82,7 +82,6 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         
                         <Grid.RowDefinitions>
@@ -114,14 +113,7 @@
 
                         </Button>
 
-                        <Button Content="C"
-                             Grid.Column="3"
-                              Grid.RowSpan="2"
-                              FontWeight="SemiBold"
-                                 Margin="1 1 0 1"
-                             Style="{StaticResource calcButtonBlue}">
-
-                        </Button>
+                        
 
                         <Button Content="6"
                             Grid.Column="0"
@@ -186,7 +178,7 @@
                         </Button>
                         
 
-                        <Button Content="0"
+                        <Button Content="00"
                          Grid.Column="0"
                           Grid.Row="1"
                                Margin="0 1 1 1"
@@ -194,7 +186,7 @@
 
                         </Button>
 
-                        <Button Content="."
+                        <Button Content="0"
                          Grid.Column="1"
                            Grid.Row="1"
                           Margin="1 1 1 1"
@@ -202,11 +194,13 @@
 
                         </Button>
 
-                        <Button Content="00"
+                        <Button 
                          Grid.Column="2"
                           Margin="1 1 1 1"
                                Grid.Row="1"
+                            Background="{StaticResource yellowBrush}"
                          Style="{StaticResource calcButtonGrey}">
+                            <Image Source="pack://application:,,,/resources/images/clear_symbol.png" Width="24" Height="24"/>
 
                         </Button>
                     </Grid>
@@ -217,7 +211,8 @@
                 </Grid>
 
 
-                <Grid Grid.Row="1">
+                <Grid Grid.Row="1"
+                      Margin="0 5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>

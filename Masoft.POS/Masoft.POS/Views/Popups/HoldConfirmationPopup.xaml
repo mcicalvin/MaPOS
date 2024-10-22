@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Masoft.POS.Views.Popups"
         mc:Ignorable="d"
-        Title="HoldConfirmationPopup" Height="450" Width="800"
+        Title="HoldConfirmationPopup" Height="230" Width="400"
         WindowStyle="None">
 
 
@@ -37,10 +37,13 @@
                 <StackPanel Orientation="Horizontal"
                     Grid.Row="0">
 
-                    <Image Source="pack://application:,,,/resources/images/pos_warning.png" Width="40" Height="60"/>
+                    <Image Source="pack://application:,,,/resources/images/pos_warning.png" Width="50" Height="60"
+                           Margin="0 0 10 0"/>
 
-                    <Label Content="Are you sure you want to Hold this products?"
-            Style="{StaticResource PopupInfoLabel}"></Label>
+                    <TextBlock Text="Are you sure you want to Hold this products?"
+                               TextWrapping="Wrap"
+                               MaxWidth="270"
+                                Style="{StaticResource PopupInfoText}"></TextBlock>
                 </StackPanel>
 
                 <Grid Grid.Row="1"
