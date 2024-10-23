@@ -16,5 +16,5 @@ C:\Users\Lemo\Desktop\All\MaPOS\Masoft.POS\Masoft.POS\App.xaml
 198-688555687
 MainWindow.xaml;Resources\styles\buttonStyles.xaml;Resources\styles\color.xaml;Views\Popups\AddQuantityPopup.xaml;Views\Popups\AuthorizationPopup.xaml;Views\Popups\CheckOutPopup.xaml;Views\Popups\ClockingPopup.xaml;Views\Popups\HoldCheckOutPopup.xaml;Views\Popups\HoldConfirmationPopup.xaml;Views\Popups\PaymentPopup.xaml;Views\Popups\SplitBillPopup.xaml;Views\UserControls\UCHoldList.xaml;Views\UserControls\UCLoginWithCode.xaml;Views\UserControls\UCLoginWithPassword.xaml;Views\UserControls\UCMainProductRow.xaml;Views\UserControls\UCProductList.xaml;Views\UserControls\UCProducts.xaml;Views\UserControls\UCReportsList.xaml;Views\UserControls\UCVoidList.xaml;
 
-True
+False
 
